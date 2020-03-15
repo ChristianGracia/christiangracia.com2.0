@@ -5,9 +5,7 @@ export function NavMenu() {
   return (
     <div style={{}}>
       {" "}
-      <Navbar
-        style={{ justifyContent: "right", backgroundColor: "transparent" }}
-      >
+      <Navbar style={{ justifyContent: "right", backgroundColor: "#3993EC" }}>
         <Navbar.Brand href="/" style={{ color: "white" }}>
           Home <i className="fas fa-radiation fa-spin"></i>
         </Navbar.Brand>

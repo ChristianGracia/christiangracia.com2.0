@@ -6,7 +6,7 @@ import { Wave } from "react-animated-text";
 
 export function MainInfo() {
   return (
-    <div style={{ backgroundColor: "#000" }}>
+    <div style={{}}>
       <div className="container" style={{ alignItems: "center" }}>
         <div className="row">
           <div className="col-sm">

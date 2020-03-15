@@ -8,7 +8,9 @@ import { NavMenu } from "./components/nav/nav.component";
 const App = () => {
   return (
     <div className="App">
-      <NavMenu />
+      <div style={{}}>
+        <NavMenu />
+      </div>
       <Router>
         <Route exact path="/" component={HomePage} />
       </Router>
