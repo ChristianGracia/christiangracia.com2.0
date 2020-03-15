@@ -1,21 +1,22 @@
 import React from "react";
 import { Button } from "react-bootstrap";
+import styles from "./explore-button.module.scss";
 
 export function ExploreButton() {
   return (
-    <Button
-      style={{
-        textAlign: "center",
-        color: "white",
-        fontWeight: "bold",
-        backgroundColor: "transparent",
-        border: "none",
-        fontSize: 20,
-        margin: "0 auto"
-      }}
-      variant="dark"
-    >
-      Scroll down or click <span style={{ color: "#FEFF01" }}>Here</span>
-    </Button>
+    <div className={styles.buttonContainer}>
+      <Button
+        style={{
+          textAlign: "center",
+          color: "white",
+          fontWeight: "bold",
+          border: "none",
+          fontSize: 20
+        }}
+        variant="dark"
+      >
+        Explore
+      </Button>
+    </div>
   );
 }
