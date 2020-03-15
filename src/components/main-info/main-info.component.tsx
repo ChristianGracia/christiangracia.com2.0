@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./main-info.module.scss";
-// import { Wave } from "react-animated-text";
+
+import * as Slide from "react-reveal/Slide";
 
 export function MainInfo() {
   return (
@@ -9,7 +10,9 @@ export function MainInfo() {
         <div className="row">
           <div className="col-sm">
             <div className={styles.container}>
-              <div className={styles.nameText}>Christian Gracia</div>
+              <Slide left>
+                <div className={styles.nameText}>Christian Gracia</div>
+              </Slide>
             </div>
             <p className={styles.jobText}>
               Software Engineer <i className="fas fa-laptop-code"></i>
