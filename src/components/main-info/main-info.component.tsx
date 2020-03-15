@@ -3,6 +3,7 @@ import styles from "./main-info.module.scss";
 
 import * as Slide from "react-reveal/Slide";
 import { Wave } from "react-animated-text";
+import { SocialLinks } from "../social-links/social-links.component";
 
 export function MainInfo() {
   return (
@@ -39,6 +40,7 @@ export function MainInfo() {
             </p>
           </div>
         </div>
+        <SocialLinks />
       </div>
     </div>
   );
