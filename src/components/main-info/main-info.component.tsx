@@ -7,41 +7,39 @@ import { SocialLinks } from "../social-links/social-links.component";
 
 export function MainInfo() {
   return (
-    <div style={{}}>
-      <div className="container" style={{ alignItems: "center" }}>
-        <div className="row">
-          <div className="col-sm">
-            <div className={styles.container}>
-              <div className={styles.nameText}>
-                {" "}
-                <Wave
-                  text="Christian Gracia"
-                  effect="stretch"
-                  effectChange={1.2}
-                />
-              </div>
+    <div className={styles.mainInfoContainer}>
+      <div className="row">
+        <div className="col-sm">
+          <div className={styles.container}>
+            <div className={styles.nameText}>
+              {" "}
+              <Wave
+                text="Christian Gracia"
+                effect="stretch"
+                effectChange={1.2}
+              />
             </div>
-            <p className={styles.jobText}>
-              Software Engineer <i className="fas fa-laptop-code"></i>
-              {"  "}
-              Providence, RI
-            </p>{" "}
-            <Slide left>
-              <p className={styles.languagesText}>
-                React, Java, React Native, C#, ++
-              </p>
-            </Slide>
-            <p className={styles.emailText}>
-              Email{" "}
-              <span style={{ color: "#FEFF01" }}>
-                <i className="fas fa-envelope"></i>
-              </span>{" "}
-              <span className={styles.email}>christianmgracia@gmail.com</span>
-            </p>
           </div>
+          <p className={styles.jobText}>
+            Software Engineer <i className="fas fa-laptop-code"></i>
+            {"  "}
+            Providence, RI
+          </p>{" "}
+          <Slide left>
+            <p className={styles.languagesText}>
+              React, Java, React Native, C#, ++
+            </p>
+          </Slide>
+          <p className={styles.emailText}>
+            Email{" "}
+            <span style={{ color: "#FEFF01" }}>
+              <i className="fas fa-envelope"></i>
+            </span>{" "}
+            <span className={styles.email}>christianmgracia@gmail.com</span>
+          </p>
         </div>
-        <SocialLinks />
       </div>
+      <SocialLinks />
     </div>
   );
 }

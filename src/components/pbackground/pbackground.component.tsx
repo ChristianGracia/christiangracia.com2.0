@@ -19,6 +19,7 @@ export function PBackground() {
           }
         },
         interactivity: {
+          detect_on: "window",
           events: {
             onhover: {
               enable: true,

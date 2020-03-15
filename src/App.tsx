@@ -8,7 +8,7 @@ import { NavMenu } from "./components/nav/nav.component";
 const App = () => {
   return (
     <div className="App">
-      <div style={{}}>
+      <div>
         <NavMenu />
       </div>
       <Router>
