@@ -2,6 +2,7 @@ import React from "react";
 import styles from "./main-info.module.scss";
 
 import * as Slide from "react-reveal/Slide";
+import { Wave } from "react-animated-text";
 
 export function MainInfo() {
   return (
@@ -10,18 +11,25 @@ export function MainInfo() {
         <div className="row">
           <div className="col-sm">
             <div className={styles.container}>
-              <Slide left>
-                <div className={styles.nameText}>Christian Gracia</div>
-              </Slide>
+              <div className={styles.nameText}>
+                {" "}
+                <Wave
+                  text="Christian Gracia"
+                  effect="stretch"
+                  effectChange={1.2}
+                />
+              </div>
             </div>
             <p className={styles.jobText}>
               Software Engineer <i className="fas fa-laptop-code"></i>
               {"  "}
               Providence, RI
-            </p>
-            <p className={styles.languagesText}>
-              React, Java, React Native, C#, ++
-            </p>
+            </p>{" "}
+            <Slide left>
+              <p className={styles.languagesText}>
+                React, Java, React Native, C#, ++
+              </p>
+            </Slide>
             <p className={styles.emailText}>
               Email{" "}
               <span style={{ color: "#FEFF01" }}>
