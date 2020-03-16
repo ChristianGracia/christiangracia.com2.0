@@ -12,6 +12,7 @@ export function HomePage() {
       </div>
       <div className={styles.contentContainer}>
         <MainInfo />
+
         <ExploreButton />
       </div>
     </div>
