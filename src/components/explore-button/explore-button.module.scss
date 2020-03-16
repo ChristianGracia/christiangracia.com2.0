@@ -1,7 +1,7 @@
 .buttonContainer {
   display: flex;
   justify-content: center;
-  margin-top: 20vh;
+  margin-top: 14vh;
 }
 .exploreButton {
   text-align: center;
@@ -9,6 +9,6 @@
   font-size: 20px;
   background-color: #feff01;
   &:hover {
-    background-color: #ffc801;
+    background-color: #f8e800;
   }
 }

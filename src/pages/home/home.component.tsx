@@ -3,6 +3,7 @@ import styles from "./home.module.scss";
 import { PBackground } from "../../components/pbackground/pbackground.component";
 import { MainInfo } from "../../components/main-info/main-info.component";
 import { ExploreButton } from "../../components/explore-button/explore-button.component";
+import { SiteInfo } from "../../components/site-info/site-info.component";
 
 export function HomePage() {
   return (
@@ -14,6 +15,7 @@ export function HomePage() {
         <MainInfo />
 
         <ExploreButton />
+        <SiteInfo />
       </div>
     </div>
   );
