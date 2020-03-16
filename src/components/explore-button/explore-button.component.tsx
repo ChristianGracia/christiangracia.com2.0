@@ -7,7 +7,11 @@ export function ExploreButton() {
   return (
     <Fade bottom>
       <div className={styles.buttonContainer}>
-        <Button className={styles.exploreButton} variant="light">
+        <Button
+          onClick={() => (window.location.href = "/main")}
+          className={styles.exploreButton}
+          variant="light"
+        >
           Click here to see what I do <i className="far fa-hand-pointer"></i>
         </Button>
       </div>

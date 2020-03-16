@@ -7,25 +7,23 @@ export function NavMenu() {
     <div className={styles.navContainer}>
       {" "}
       <Navbar style={{ justifyContent: "right", backgroundColor: "#3993EC" }}>
-        <Navbar.Brand href="/" style={{ color: "white", fontWeight: "bold" }}>
-          Home <i className="fas fa-radiation fa-spin"></i>
+        <Navbar.Brand href="/">
+          <span className={styles.navLink}>
+            Home <i className="fas fa-radiation fa-spin"></i>
+          </span>
         </Navbar.Brand>
 
         <Nav className="ml-auto">
-          <Nav.Link href="/work" style={{ color: "white", fontWeight: "bold" }}>
-            Projects
+          <Nav.Link href="/projects">
+            {" "}
+            <span className={styles.navLink}>Projects</span>
           </Nav.Link>
-          <Nav.Link
-            href="/about"
-            style={{ color: "white", fontWeight: "bold" }}
-          >
-            About
+          <Nav.Link href="/about">
+            {" "}
+            <span className={styles.navLink}>About</span>
           </Nav.Link>
-          <Nav.Link
-            href="/contact"
-            style={{ color: "white", fontWeight: "bold" }}
-          >
-            Contact
+          <Nav.Link href="/contact">
+            <span className={styles.navLink}>Contact</span>
           </Nav.Link>
         </Nav>
       </Navbar>
