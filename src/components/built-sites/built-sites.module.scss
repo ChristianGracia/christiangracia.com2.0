@@ -1,0 +1,28 @@
+.sitesContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding-top: 30px;
+}
+.site-link {
+  color: white;
+  font-size: 20px;
+}
+.sitesDiv {
+  margin-top: 40px;
+}
+
+.sites-detail {
+  margin: 40px 20px;
+  /* color: white; */
+  font-weight: bold;
+  color: #feff01;
+}
+
+.sitesHeader {
+  font-weight: bold;
+  font-size: 30px;
+  margin-bottom: 30px;
+  color: #feff01;
+}
