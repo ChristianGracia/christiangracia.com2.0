@@ -1,6 +1,7 @@
 import React from "react";
+import { Particles } from "react-particles-js";
 
-export function Bbackground() {
+export function BBackground() {
   return (
     <Particles
       params={{
@@ -12,44 +13,27 @@ export function Bbackground() {
             }
           },
           size: {
-            value: 3,
-            random: true,
-            anim: {
-              speed: 4,
-              size_min: 0.3
-            }
+            value: 10,
+            random: true
+          },
+          move: {
+            direction: "bottom",
+            out_mode: "out"
           },
           line_linked: {
             enable: false
-          },
-          move: {
-            random: true,
-            speed: 1,
-            direction: "top",
-            out_mode: "out"
           }
         },
         interactivity: {
           events: {
-            onhover: {
-              enable: true,
-              mode: "bubble"
-            },
             onclick: {
               enable: true,
-              mode: "repulse"
+              mode: "remove"
             }
           },
           modes: {
-            bubble: {
-              distance: 250,
-              duration: 2,
-              size: 0,
-              opacity: 0
-            },
-            repulse: {
-              distance: 400,
-              duration: 4
+            remove: {
+              particles_nb: 10
             }
           }
         }
