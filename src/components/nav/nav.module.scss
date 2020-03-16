@@ -5,4 +5,11 @@
 .navLink {
   color: white;
   font-weight: bold;
+  &:hover {
+    color: #fdff01;
+  }
+}
+.navHome {
+  justify-content: right;
+  background-color: #3993ec;
 }

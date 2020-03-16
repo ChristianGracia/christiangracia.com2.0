@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./home.module.scss";
-import { PBackground } from "../../components/pbackground/pbackground.component";
+import { PBackground } from "../../components/particles/pbackground/pbackground.component";
 import { MainInfo } from "../../components/main-info/main-info.component";
 import { ExploreButton } from "../../components/explore-button/explore-button.component";
 import { SiteInfo } from "../../components/site-info/site-info.component";

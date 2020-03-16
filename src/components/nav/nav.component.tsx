@@ -5,21 +5,17 @@ import styles from "./nav.module.scss";
 export function NavMenu() {
   return (
     <div className={styles.navContainer}>
-      {" "}
-      <Navbar style={{ justifyContent: "right", backgroundColor: "#3993EC" }}>
+      <Navbar className={styles.navHome}>
         <Navbar.Brand href="/">
           <span className={styles.navLink}>
             Home <i className="fas fa-radiation fa-spin"></i>
           </span>
         </Navbar.Brand>
-
         <Nav className="ml-auto">
           <Nav.Link href="/projects">
-            {" "}
             <span className={styles.navLink}>Projects</span>
           </Nav.Link>
           <Nav.Link href="/about">
-            {" "}
             <span className={styles.navLink}>About</span>
           </Nav.Link>
           <Nav.Link href="/contact">
