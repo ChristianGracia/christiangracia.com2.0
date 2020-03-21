@@ -1,7 +1,7 @@
 import React from "react";
 import * as Fade from "react-reveal/Fade";
 import styles from "./built-sites.module.scss";
-import { SiteImage } from "../common/site-image/site-image.component";
+import { ProjectDisplay } from "../common/project-display/project-display.component";
 
 const nflPic = require("../../assets/nflpic.PNG");
 const onabeatPic = require("../../assets/onabeatpic.PNG");
@@ -20,10 +20,19 @@ export function BuiltSites() {
           </a>
         </span>
         <div>
-          <img className={styles.siteImages} src={nflPic} />
+          <img
+            className={styles.siteImages}
+            alt="natures frontier landscaping site I built"
+            src={nflPic}
+          />
         </div>
+        <ProjectDisplay />
         <div>
-          <img className={styles.siteImages} src={onabeatPic} />
+          <img
+            className={styles.siteImages}
+            src={onabeatPic}
+            alt="onabeat multimedia site I built"
+          />
         </div>
 
         <span
