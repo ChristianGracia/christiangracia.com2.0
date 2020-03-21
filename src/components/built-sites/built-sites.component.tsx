@@ -6,7 +6,7 @@ export function BuiltSites() {
   return (
     <Fade left cascade>
       <div className={styles.sitesContainer}>
-        <span className={styles.sitesHeader}>Sites I built and host</span>
+        <span className={styles.sitesHeader}>Other Sites</span>
         <span className={styles.sitesDiv}>
           <a
             className="site-link btn btn-danger"
@@ -25,17 +25,6 @@ export function BuiltSites() {
           >
             nflandscaping.com
           </a>
-        </span>
-
-        <span
-          style={{
-            fontWeight: "bold",
-            color: "rgb(0,255,0)",
-            fontSize: 23,
-            marginTop: 10
-          }}
-        >
-          All sites are clients
         </span>
       </div>
     </Fade>

@@ -30,6 +30,13 @@ export function Github() {
     var returnString = newDate + "\n " + hours.substring(0, hours.length - 1);
     return returnString;
   };
+  const hideRepos = () => {
+    if (githubData == undefined) {
+      fetchDataAction();
+    } else {
+      setGithubData(undefined);
+    }
+  };
 
   const repoItems =
     githubData !== undefined
@@ -42,7 +49,8 @@ export function Github() {
                   className="card card-body mb-2 bg-light ml-auto mr-auto"
                   style={{
                     margin: 0,
-                    maxWidth: 480
+                    maxWidth: 600,
+                    padding: 20
                   }}
                 >
                   <div
@@ -86,9 +94,11 @@ export function Github() {
                         className=""
                         style={{ textAlign: "center", flexWrap: "wrap" }}
                       >
+                        <span> Language: </span>
                         <span className="badge badge-danger">
                           {repo.language}
                         </span>
+                        {/*
                         <span className="badge badge-info ">
                           <i className="fas fa-star"></i> Stars:{" "}
                           {repo.stargazers_count}
@@ -100,7 +110,7 @@ export function Github() {
                         <span className="badge badge-success">
                           <i className="fas fa-code-branch"></i> Forks:{" "}
                           {repo.forks_count}
-                        </span>
+                    </span> */}
                       </div>
                     </div>
                   </div>
@@ -114,6 +124,30 @@ export function Github() {
 
   return (
     <div>
+      <div style={{ position: "relative", textAlign: "center" }}>
+        <span
+          style={{
+            fontWeight: "bold",
+            fontSize: 40,
+            marginBottom: 30,
+            borderBottom: "solid 1px white",
+            maxWidth: 700,
+            minWidth: 300,
+            margin: "0 auto",
+            color: "#feff01"
+          }}
+        >
+          {" "}
+          Latest Github Repos <i className="fab fa-github"></i>{" "}
+        </span>
+        <div style={{ marginTop: 35, marginBottom: 35 }}>
+          <Button onClick={() => hideRepos()}>
+            {githubData == undefined ? "Show " : "Hide "}
+            Projects
+          </Button>
+        </div>
+      </div>
+
       <div
         style={{
           fontSize: 30,
@@ -123,6 +157,7 @@ export function Github() {
           justifyContent: "space-around"
         }}
       >
+        {" "}
         {repoItems}
       </div>
     </div>
