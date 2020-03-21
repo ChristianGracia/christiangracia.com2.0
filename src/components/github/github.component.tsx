@@ -2,10 +2,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import Fade from "react-reveal/Fade";
 import { Button } from "react-bootstrap";
-// import "./github.styles.scss";
-interface IRepoInfo {
-  repoName: string;
-}
+import styles from "./github.styles.module.scss";
 
 export function Github() {
   const fetchDataAction = async () => {
@@ -24,55 +21,71 @@ export function Github() {
     fetchDataAction();
   });
 
-  const repoItems =
-    githubData != undefined
-      ? githubData.map((repo: any) => (
-          <div key={repo.id} style={{}}>
-            <Fade top>
-              <div
-                key={repo.id}
-                className="card card-body mb-2 bg-light ml-auto mr-auto pr-3"
-                style={{ margin: 0, paddingRight: 0, width: "88vw" }}
-              >
-                <div className="row">
-                  <div className="col-lg-6" style={{}}>
-                    <h4 style={{ color: "white" }}>
-                      <Link
-                        to={`//${repo.html_url.substr(7)}`}
-                        className="text-info"
-                        target="_blank"
-                      >
-                        <p style={{ color: "#3993EC" }}>{repo.name}</p>
-                      </Link>
-                    </h4>
-                    <p>{repo.description}</p>
-                  </div>
+  const getUpdateTime = (time: string): string => {
+    var timeSplit = time.split("T");
+    var date = timeSplit[0];
+    var hours = timeSplit[1];
+    var returnString = date + " " + hours.substring(0, hours.length - 1);
+    return returnString;
+  };
 
-                  <div className="col-md-6" style={{}}>
-                    <span className="badge badge-info mr-1">
-                      <i className="fas fa-star"></i> Stars:{" "}
-                      {repo.stargazers_count}
-                    </span>
-                    <span className="badge badge-secondary mr-1">
-                      <i className="fas fa-eye"></i> Watchers:{" "}
-                      {repo.watchers_count}
-                    </span>
-                    <span className="badge badge-success">
-                      <i className="fas fa-code-branch"></i> Forks:{" "}
-                      {repo.forks_count}
-                    </span>
+  const repoItems =
+    githubData !== undefined
+      ? githubData.map(
+          (repo: any): JSX.Element => (
+            <div key={repo.id}>
+              <Fade top>
+                <div
+                  key={repo.id}
+                  className="card card-body mb-2 bg-light ml-auto mr-auto pr-3"
+                  style={{ margin: 0, paddingRight: 0, width: "88vw" }}
+                >
+                  <div className="row">
+                    <div className="col-lg-6" style={{}}>
+                      <h4 style={{ color: "white" }}>
+                        <Link
+                          to={`//${repo.html_url.substr(7)}`}
+                          className="text-info"
+                          target="_blank"
+                        >
+                          <p style={{ color: "#3993EC" }}>{repo.name}</p>
+                        </Link>
+                      </h4>
+                      <p>{repo.description}</p>
+                      <span className={styles.updatedText}>
+                        Last updated at: {getUpdateTime(repo.updated_at)}
+                      </span>
+                    </div>
+
+                    <div className="col-md-6" style={{}}>
+                      <span className="badge badge-danger mr-1">
+                        {repo.language}
+                      </span>
+                      <span className="badge badge-info mr-1">
+                        <i className="fas fa-star"></i> Stars:{" "}
+                        {repo.stargazers_count}
+                      </span>
+                      <span className="badge badge-secondary mr-1">
+                        <i className="fas fa-eye"></i> Watchers:{" "}
+                        {repo.watchers_count}
+                      </span>
+                      <span className="badge badge-success">
+                        <i className="fas fa-code-branch"></i> Forks:{" "}
+                        {repo.forks_count}
+                      </span>
+                    </div>
                   </div>
                 </div>
-              </div>
-            </Fade>
-            <div style={{ padding: 30 }}></div>
-          </div>
-        ))
+              </Fade>
+              <div style={{ padding: 30 }}></div>
+            </div>
+          )
+        )
       : null;
 
   return (
     <div>
-      <div style={{ fontSize: 30, color: "white" }}>{repoItems}</div>
+      <div style={{ fontSize: 30 }}>{repoItems}</div>
     </div>
   );
 }

@@ -4,6 +4,10 @@ import { Particles } from "react-particles-js";
 export function BBackground() {
   return (
     <Particles
+      style={{
+        width: "100%",
+        background: `#3993EC`
+      }}
       params={{
         particles: {
           number: {
