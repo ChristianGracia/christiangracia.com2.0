@@ -1,0 +1,34 @@
+.pageContainer {
+  height: 99vh;
+}
+
+@media only screen and (min-width: 1900px) {
+  .pageContainer {
+    margin-top: -1vh;
+    // height: 96vh;
+  }
+}
+@media only screen and (min-width: 2100px) {
+  .pageContainer {
+    margin-top: -2vh;
+    // height: 96vh;
+  }
+}
+@media only screen and (min-width: 2300px) {
+  .pageContainer {
+    margin-top: -3vh;
+    // height: 96vh;
+  }
+}
+@media only screen and (min-width: 2500px) {
+  .pageContainer {
+    margin-top: -4vh;
+    // height: 97vh;
+  }
+}
+@media only screen and (min-width: 2700px) {
+  .pageContainer {
+    margin-top: -2vh;
+    // height: 97vh;
+  }
+}
