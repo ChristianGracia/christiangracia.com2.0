@@ -11,11 +11,11 @@ export function BuiltSites() {
     <Fade left cascade>
       <div className={styles.sitesContainer}>
         <span className={styles.sitesHeader}>Other Sites</span>
-        <span className={styles.sitesDiv}>
-          <a
-            className="site-link btn btn-danger"
-            href="https://www.onabeat.com"
-          >
+        <span
+          className={styles.sitesDiv}
+          style={{ marginTop: 30, marginBottom: 30 }}
+        >
+          <a className=" btn btn-danger" href="https://www.onabeat.com">
             onabeat.com
           </a>
         </span>
@@ -26,7 +26,6 @@ export function BuiltSites() {
             src={nflPic}
           />
         </div>
-        <ProjectDisplay />
         <div>
           <img
             className={styles.siteImages}
@@ -39,10 +38,7 @@ export function BuiltSites() {
           className={styles.sitesDiv}
           style={{ marginTop: 30, marginBottom: 30 }}
         >
-          <a
-            className="site-link btn btn-danger"
-            href="https://www.nflandscaping.com"
-          >
+          <a className="btn btn-danger" href="https://www.nflandscaping.com">
             nflandscaping.com
           </a>
         </span>

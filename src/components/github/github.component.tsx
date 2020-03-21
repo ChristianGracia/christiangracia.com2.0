@@ -31,7 +31,7 @@ export function Github() {
     return returnString;
   };
   const hideRepos = () => {
-    if (githubData == undefined) {
+    if (githubData === undefined) {
       fetchDataAction();
     } else {
       setGithubData(undefined);
@@ -50,7 +50,7 @@ export function Github() {
                   style={{
                     margin: 0,
                     maxWidth: 600,
-                    padding: 20
+                    padding: 40
                   }}
                 >
                   <div
@@ -142,7 +142,7 @@ export function Github() {
         </span>
         <div style={{ marginTop: 35, marginBottom: 35 }}>
           <Button onClick={() => hideRepos()}>
-            {githubData == undefined ? "Show " : "Hide "}
+            {githubData === undefined ? "Show " : "Hide "}
             Projects
           </Button>
         </div>
