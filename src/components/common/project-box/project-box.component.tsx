@@ -38,7 +38,6 @@ export const ProjectBox = (props: any) => {
           {/* {tweet === "" ? null : (
             <TwitterTweetEmbed options={{ width: 300 }} tweetId={tweet} />
           )} */}
-          |
         </div>
       </div>
     </div>

@@ -3,7 +3,7 @@ import { Button } from "react-bootstrap";
 import styles from "./explore-button.module.scss";
 import * as Fade from "react-reveal/Fade";
 
-export function ExploreButton() {
+export function ExploreButton(): JSX.Element {
   return (
     <Fade bottom>
       <div className={styles.buttonContainer}>

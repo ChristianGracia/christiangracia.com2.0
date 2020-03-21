@@ -5,7 +5,7 @@ import * as Slide from "react-reveal/Slide";
 import { Wave } from "react-animated-text";
 import { SocialLinks } from "../social-links/social-links.component";
 
-export function MainInfo() {
+export function MainInfo(): JSX.Element {
   return (
     <div className={styles.mainInfoContainer}>
       <div className="row">

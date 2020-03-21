@@ -2,7 +2,7 @@ import React from "react";
 import { Nav, Navbar } from "react-bootstrap";
 import styles from "./nav.module.scss";
 
-export function NavMenu() {
+export function NavMenu(): JSX.Element {
   return (
     <div className={styles.navContainer}>
       <Navbar className={styles.navHome}>
