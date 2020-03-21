@@ -1,6 +1,10 @@
 import React from "react";
 import * as Fade from "react-reveal/Fade";
 import styles from "./built-sites.module.scss";
+import { SiteImage } from "../common/site-image/site-image.component";
+
+const nflPic = require("../../assets/nflpic.PNG");
+const onabeatPic = require("../../assets/onabeatpic.PNG");
 
 export function BuiltSites() {
   return (
@@ -15,6 +19,13 @@ export function BuiltSites() {
             onabeat.com
           </a>
         </span>
+        <div>
+          <img className={styles.siteImages} src={nflPic} />
+        </div>
+        <div>
+          <img className={styles.siteImages} src={onabeatPic} />
+        </div>
+
         <span
           className={styles.sitesDiv}
           style={{ marginTop: 30, marginBottom: 30 }}
