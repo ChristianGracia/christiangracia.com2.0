@@ -24,8 +24,10 @@ export function Github() {
   const getUpdateTime = (time: string): string => {
     var timeSplit = time.split("T");
     var date = timeSplit[0];
+    var dateSplit = date.split("-");
+    var newDate = [dateSplit[1], dateSplit[2], dateSplit[0]].join("-");
     var hours = timeSplit[1];
-    var returnString = date + " " + hours.substring(0, hours.length - 1);
+    var returnString = newDate + "\n " + hours.substring(0, hours.length - 1);
     return returnString;
   };
 
@@ -37,11 +39,21 @@ export function Github() {
               <Fade top>
                 <div
                   key={repo.id}
-                  className="card card-body mb-2 bg-light ml-auto mr-auto pr-3"
-                  style={{ margin: 0, paddingRight: 0, width: "88vw" }}
+                  className="card card-body mb-2 bg-light ml-auto mr-auto"
+                  style={{
+                    margin: 0,
+                    maxWidth: 480
+                  }}
                 >
-                  <div className="row">
-                    <div className="col-lg-6" style={{}}>
+                  <div
+                    className="row"
+                    style={{
+                      display: "flex",
+                      flexDirection: "column",
+                      justifyContent: "center"
+                    }}
+                  >
+                    <div className="" style={{ textAlign: "center" }}>
                       <h4 style={{ color: "white" }}>
                         <Link
                           to={`//${repo.html_url.substr(7)}`}
@@ -51,28 +63,45 @@ export function Github() {
                           <p style={{ color: "#3993EC" }}>{repo.name}</p>
                         </Link>
                       </h4>
-                      <p>{repo.description}</p>
-                      <span className={styles.updatedText}>
-                        Last updated at: {getUpdateTime(repo.updated_at)}
-                      </span>
+                      <span>{repo.description}</span>
                     </div>
+                    <div
+                      style={{
+                        textAlign: "center",
+                        display: "flex",
+                        flexDirection: "column"
+                      }}
+                    >
+                      <span
+                        className={styles.updatedText}
+                        style={{ color: "#3892EB" }}
+                      >
+                        Last updated at:{" "}
+                      </span>
+                      <span style={{ color: "black", fontWeight: "bold" }}>
+                        {getUpdateTime(repo.updated_at)}
+                      </span>
 
-                    <div className="col-md-6" style={{}}>
-                      <span className="badge badge-danger mr-1">
-                        {repo.language}
-                      </span>
-                      <span className="badge badge-info mr-1">
-                        <i className="fas fa-star"></i> Stars:{" "}
-                        {repo.stargazers_count}
-                      </span>
-                      <span className="badge badge-secondary mr-1">
-                        <i className="fas fa-eye"></i> Watchers:{" "}
-                        {repo.watchers_count}
-                      </span>
-                      <span className="badge badge-success">
-                        <i className="fas fa-code-branch"></i> Forks:{" "}
-                        {repo.forks_count}
-                      </span>
+                      <div
+                        className=""
+                        style={{ textAlign: "center", flexWrap: "wrap" }}
+                      >
+                        <span className="badge badge-danger">
+                          {repo.language}
+                        </span>
+                        <span className="badge badge-info ">
+                          <i className="fas fa-star"></i> Stars:{" "}
+                          {repo.stargazers_count}
+                        </span>
+                        <span className="badge badge-secondary ">
+                          <i className="fas fa-eye"></i> Watchers:{" "}
+                          {repo.watchers_count}
+                        </span>
+                        <span className="badge badge-success">
+                          <i className="fas fa-code-branch"></i> Forks:{" "}
+                          {repo.forks_count}
+                        </span>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -85,7 +114,17 @@ export function Github() {
 
   return (
     <div>
-      <div style={{ fontSize: 30 }}>{repoItems}</div>
+      <div
+        style={{
+          fontSize: 30,
+          display: "flex",
+          flexDirection: "row",
+          flexWrap: "wrap",
+          justifyContent: "space-around"
+        }}
+      >
+        {repoItems}
+      </div>
     </div>
   );
 }
