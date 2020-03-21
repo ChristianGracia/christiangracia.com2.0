@@ -6,21 +6,22 @@
 }
 .homeContainer {
   position: relative;
-  height: 94vh;
-  margin-top: -1vh;
+  height: 100vh;
+  // height: 94vh;
+  // margin-top: -2vh;
 }
 .contentContainer {
   pointer-events: auto;
 }
-@media only screen and (min-width: 1900px) {
-  .homeContainer {
-    margin-top: -3vh;
-    height: 96vh;
-  }
-}
-@media only screen and (min-width: 2500px) {
-  .homeContainer {
-    margin-top: -4vh;
-    height: 97vh;
-  }
-}
+// @media only screen and (min-width: 1900px) {
+//   .homeContainer {
+//     margin-top: -3vh;
+//     height: 96vh;
+//   }
+// }
+// @media only screen and (min-width: 2500px) {
+//   .homeContainer {
+//     margin-top: -4vh;
+//     height: 97vh;
+//   }
+// }
