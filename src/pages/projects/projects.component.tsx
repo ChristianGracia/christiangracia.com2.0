@@ -7,7 +7,7 @@ import styles from "./projects.module.scss";
 export function ProjectsPage() {
   return (
     <div className={styles.homeContainer}>
-      <div className={styles.particleBackground} style={{ height: 100 }}>
+      <div className={styles.particleBackground} style={{}}>
         <SBackground />
       </div>
       <div style={{ backgroundColor: "black" }}>

@@ -1,34 +1,47 @@
 .pageContainer {
   height: 99vh;
+  margin-top: -2%;
 }
 
-@media only screen and (min-width: 1900px) {
-  .pageContainer {
-    margin-top: -1vh;
-    // height: 96vh;
-  }
-}
 @media only screen and (min-width: 2100px) {
   .pageContainer {
-    margin-top: -2vh;
+    margin-top: -2.5%;
     // height: 96vh;
   }
 }
-@media only screen and (min-width: 2300px) {
+@media only screen and (min-width: 2800px) {
   .pageContainer {
-    margin-top: -3vh;
+    margin-top: -3%;
     // height: 96vh;
   }
 }
-@media only screen and (min-width: 2500px) {
-  .pageContainer {
-    margin-top: -4vh;
-    // height: 97vh;
-  }
-}
-@media only screen and (min-width: 2700px) {
-  .pageContainer {
-    margin-top: -2vh;
-    // height: 97vh;
-  }
-}
+// @media only screen and (min-width: 2100px) {
+//   .pageContainer {
+//     margin-top: -5vh;
+//     // height: 96vh;
+//   }
+// }
+// @media only screen and (min-width: 1400px) {
+//   .pageContainer {
+//     margin-top: -1vh;
+//     // height: 96vh;
+//   }
+// }
+// @media only screen and (min-width: 1600px) {
+//   .pageContainer {
+//     margin-top: -4vh;
+//     // height: 97vh;
+//   }
+// }
+// @media only screen and (min-width: 2700px) {
+//   .pageContainer {
+//     margin-top: -6vh;
+//     // height: 97vh;
+//   }
+// }
+// @media only screen and (min-width: 3000px) {
+//   .pageContainer {
+//     // margin-top: -1vh;
+//     // height: 97vh;
+//   }
+// }
