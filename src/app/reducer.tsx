@@ -1,3 +1,7 @@
+export default function reducer(state = {}) {
+  return state;
+}
+
 // const SET_LOGIN_PENDING = "SET_LOGIN_PENDING";
 // const SET_LOGIN_SUCCESS = "SET_LOGIN_SUCCESS";
 // const SET_LOGIN_ERROR = "SET_LOGIN_ERROR";
@@ -62,27 +66,27 @@
 //   })();
 // }
 
-export default function reducer(
-  state = {
-    // isLoginSuccess: false,
-    // isLoginPending: false,
-    // loginError: null
-  }
-) {
-  // case SET_LOGIN_PENDING:
-  //   return Object.assign({}, state, {
-  //     isLoginPending: action.isLoginPending
-  //   });
+// export default function reducer(
+//   state = {
+//     // isLoginSuccess: false,
+//     // isLoginPending: false,
+//     // loginError: null
+//   }
+// ) {
+//   // case SET_LOGIN_PENDING:
+//   //   return Object.assign({}, state, {
+//   //     isLoginPending: action.isLoginPending
+//   //   });
 
-  // case SET_LOGIN_SUCCESS:
-  //   return Object.assign({}, state, {
-  //     isLoginSuccess: action.isLoginSuccess
-  //   });
+//   // case SET_LOGIN_SUCCESS:
+//   //   return Object.assign({}, state, {
+//   //     isLoginSuccess: action.isLoginSuccess
+//   //   });
 
-  // case SET_LOGIN_ERROR:
-  //   return Object.assign({}, state, {
-  //     loginError: action.loginError
-  //   });
+//   // case SET_LOGIN_ERROR:
+//   //   return Object.assign({}, state, {
+//   //     loginError: action.loginError
+//   //   });
 
-  return state;
-}
+//   return state;
+// }
