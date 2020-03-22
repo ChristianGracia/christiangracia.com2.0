@@ -3,7 +3,7 @@ import { ProjectBox } from "../project-box/project-box.component";
 
 export function ProjectDisplay() {
   return (
-    <div style={{ backgroundColor: "white" }}>
+    <div style={{ backgroundColor: "white", position: "relative" }}>
       <ProjectBox
         codeLink={
           "https://github.com/ChristianGracia/Java-Financial-Web-Scraper"

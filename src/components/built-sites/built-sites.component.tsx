@@ -1,14 +1,28 @@
 import React from "react";
 import * as Fade from "react-reveal/Fade";
 import styles from "./built-sites.module.scss";
-import { ProjectDisplay } from "../common/project-display/project-display.component";
+// import { ProjectDisplay } from "../common/project-display/project-display.component";
 import Slider from "react-animated-slider";
 
 const nflPic = require("../../assets/nflpic.PNG");
 const onabeatPic = require("../../assets/onabeatpic.PNG");
 
-export function BuiltSites() {
-  const content: any = [{}];
+export function BuiltSites(): JSX.Element {
+  const content = [
+    {
+      title: "Committed to Excellence",
+      description:
+        "With over 10 years of experience, we work with our clients to make their ideas come true",
+
+      image: nflPic
+    }
+    // {
+    //   title: "Jobs Big or Small, We Got You Covered",
+    //   description: "",
+
+    //   image: onabeatPic
+    // }
+  ];
   return (
     <Fade left cascade>
       <div className={styles.sitesContainer}>
@@ -21,13 +35,7 @@ export function BuiltSites() {
             onabeat.com
           </a>
         </span>
-        <div>
-          <img
-            className={styles.siteImages}
-            alt="natures frontier landscaping site I built"
-            src={nflPic}
-          />
-        </div>
+
         <Slider className="slider-wrapper" infinite={true} autoplay={2000}>
           {content.map((item: any, index: number) => (
             <div
@@ -44,7 +52,7 @@ export function BuiltSites() {
                 </div>
                 <div>
                   <div style={{}}>
-                    <div className="finance-text" style={{ marginTop: "10vh" }}>
+                    <div className="" style={{ marginTop: "10vh" }}>
                       hi
                     </div>
                     {/* <div className="finance-text">
@@ -65,6 +73,13 @@ export function BuiltSites() {
             className={styles.siteImages}
             src={onabeatPic}
             alt="onabeat multimedia site I built"
+          />
+        </div>
+        <div>
+          <img
+            className={styles.siteImages}
+            alt="natures frontier landscaping site I built"
+            src={nflPic}
           />
         </div>
 

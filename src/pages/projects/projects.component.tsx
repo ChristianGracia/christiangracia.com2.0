@@ -12,9 +12,11 @@ export function ProjectsPage() {
         <SBackground />
       </div>
       <div style={{ backgroundColor: "black" }}>
-        <ProjectDisplay />
         <BuiltSites />
         <Github />
+        <div style={{ maxWidth: 506, margin: "0 auto" }}>
+          <ProjectDisplay />
+        </div>
       </div>
       <div style={{ padding: 60 }}></div>
     </div>
