@@ -8,10 +8,13 @@ import { ProjectBox } from "../common/project-box/project-box.component";
 
 // import Slider from "react-animated-slider";
 
-const nflPic = require("../../assets/nflpic.PNG");
 const onabeatPic = require("../../assets/onabeatpic.PNG");
-const nflPic2 = require("../../assets/nflpic2.PNG");
 const onabeatPic2 = require("../../assets/onabeat2.PNG");
+const onabeatPic3 = require("../../assets/onabeat3.PNG");
+const nflPic = require("../../assets/nflpic.PNG");
+const nflPic2 = require("../../assets/nflpic2.PNG");
+const nflPic3 = require("../../assets/nflpic3.PNG");
+
 // const content = [
 //   {
 //     image: nflPic
@@ -54,6 +57,9 @@ export function BuiltSites(): JSX.Element {
             <div>
               <img src={onabeatPic2} />
             </div>
+            <div>
+              <img src={onabeatPic3} />
+            </div>
           </Carousel>
           <div
             style={{
@@ -78,6 +84,9 @@ export function BuiltSites(): JSX.Element {
             </div>
             <div>
               <img src={nflPic2} />
+            </div>
+            <div>
+              <img src={nflPic3} />
             </div>
           </Carousel>
         </div>
