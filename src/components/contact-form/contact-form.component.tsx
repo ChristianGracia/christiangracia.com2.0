@@ -3,17 +3,15 @@ import * as Jump from "react-reveal/Jump";
 import { Button } from "react-bootstrap";
 // import "./contact-page.styles.css";
 import * as LightSpeed from "react-reveal/LightSpeed";
+import styles from "./contact-form.module.scss";
 
 import React from "react";
 
 export function ContactForm() {
   return (
     <div style={{ position: "relative" }}>
-      {" "}
-      <div className="contact-page-container">
-        {" "}
+      <div className={styles.contactPageContainer}>
         <div className="row" style={{}}>
-          {" "}
           <i
             className="fas fa-mail-bulk"
             style={{ fontSize: 80, color: "white", marginTop: 30 }}
@@ -21,14 +19,14 @@ export function ContactForm() {
         </div>
         <LightSpeed left>
           <div style={{ marginTop: 20 }}>
-            <span className="form-label">Leave me a message!</span>
+            <span className={styles.formLabel}>Leave me a message!</span>
           </div>
         </LightSpeed>
-        <div className="contact-form-container">
+        <div className={styles.contactFormContainer}>
           <Jump>
             <form action="https://sendpoint.io/id/gWFzbxh9O" method="POST">
               <div className="row form-row-aligner">
-                <span className="form-label">Email: </span>
+                <span className={styles.formLabel}>Email: </span>
 
                 <input
                   type="email"
@@ -39,11 +37,11 @@ export function ContactForm() {
                 />
               </div>
 
-              <div className="row form-row">
+              <div className={styles.formRow}>
                 <span className="form-label">Message</span>
               </div>
 
-              <div className="row form-row">
+              <div className={styles.formRow}>
                 <textarea
                   rows={4}
                   name="body"
@@ -52,7 +50,7 @@ export function ContactForm() {
                   //   onChange={this.onChange}
                 />
               </div>
-              <div className="row form-row">
+              <div className={styles.formRow}>
                 <Button
                   variant="danger"
                   type="submit"
