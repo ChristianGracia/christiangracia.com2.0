@@ -3,7 +3,8 @@ import * as Fade from "react-reveal/Fade";
 import styles from "./built-sites.module.scss";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
-// import { ProjectDisplay } from "../common/project-display/project-display.component";
+
+import { ProjectBox } from "../common/project-box/project-box.component";
 
 // import Slider from "react-animated-slider";
 
@@ -45,6 +46,17 @@ export function BuiltSites(): JSX.Element {
               <img src={onabeatPic2} />
             </div>
           </Carousel>
+          <ProjectBox
+            codeLink={"https://github.com/ChristianGracia/onabeat.com"}
+            title={"onabeat.com"}
+            description={
+              "MERN stack site I wrote and host for my friends in On a Beat. Hosted on Heroku on a single server. React/Redux front-end with a Node Js back-end and a MongoDB database. Users can make accounts, sign in, add/delete videos and songs to front page, and more with a protected dashboard I built."
+            }
+            tweet={"1207152863434231808"}
+            siteLink={"http://onabeat.com"}
+          />
+
+          <i className="fas fa-code iconStyle"></i>
           <Carousel>
             <div>
               <img src={nflPic} />
@@ -53,6 +65,16 @@ export function BuiltSites(): JSX.Element {
               <img src={nflPic2} />
             </div>
           </Carousel>
+
+          <ProjectBox
+            codeLink={"https://github.com/ChristianGracia/nflandscaping.com"}
+            title={"Nature's Frontier Landscaping"}
+            description={
+              "Over 11,000+ lines of React Native code. Users can email the front desk, view detailed info and images about services offered, leave suggestions, and more!"
+            }
+            tweet={"1173662545464451075"}
+            siteLink={"http://nflandscaping.com"}
+          />
         </div>
         {/*
         <div>
