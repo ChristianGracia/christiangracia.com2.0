@@ -42,15 +42,16 @@ export function Github() {
     githubData !== undefined
       ? githubData.map(
           (repo: any): JSX.Element => (
-            <div key={repo.id}>
+            <div key={repo.id} style={{ padding: 20 }}>
               <Fade top>
                 <div
                   key={repo.id}
                   className="card card-body mb-2 bg-light ml-auto mr-auto"
                   style={{
                     margin: 0,
-                    maxWidth: 600,
-                    padding: 40
+                    maxWidth: 400,
+                    minWidth: 280,
+                    padding: 20
                   }}
                 >
                   <div
@@ -71,7 +72,7 @@ export function Github() {
                           <p style={{ color: "#3993EC" }}>{repo.name}</p>
                         </Link>
                       </h4>
-                      <span>{repo.description}</span>
+                      <span style={{ fontSize: 20 }}>{repo.description}</span>
                     </div>
                     <div
                       style={{
@@ -116,7 +117,6 @@ export function Github() {
                   </div>
                 </div>
               </Fade>
-              <div style={{ padding: 30 }}></div>
             </div>
           )
         )
@@ -132,7 +132,8 @@ export function Github() {
             marginBottom: 30,
             borderBottom: "solid 1px white",
             maxWidth: 700,
-            minWidth: 300,
+            minWidth: 280,
+            width: "90vw",
             margin: "0 auto",
             color: "#feff01"
           }}
