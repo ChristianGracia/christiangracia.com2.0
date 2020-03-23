@@ -3,7 +3,7 @@ import { SBackground } from "../../components/particles/sbackground/sbackground.
 import { BuiltSites } from "../../components/built-sites/built-sites.component";
 import { Github } from "../../components/github/github.component";
 import styles from "./projects.module.scss";
-import { ProjectDisplay } from "../../components/common/project-display/project-display.component";
+
 import { OtherProjects } from "../../components/other-projects/other-projects.component";
 
 export function ProjectsPage() {
@@ -12,7 +12,7 @@ export function ProjectsPage() {
       <div className={styles.particleBackground} style={{}}>
         <SBackground />
       </div>
-      <div style={{ backgroundColor: "black" }}>
+      <div>
         <BuiltSites />
         <Github />
         <div style={{ maxWidth: 506, margin: "0 auto" }}>
