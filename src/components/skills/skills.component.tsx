@@ -5,6 +5,7 @@ import * as LightSpeed from "react-reveal/LightSpeed";
 // import Education from "../education/education.component";
 // import "./skills-and-edu.styles.css";
 import Slide from "react-reveal/Slide";
+import styles from "./skills.module.scss";
 
 export function Skills() {
   return (
@@ -24,7 +25,7 @@ export function Skills() {
                   textAlign: "center"
                 }}
               >
-                <p className="skillsText">
+                <p className={styles.skillsText}>
                   <span style={{ color: "yellow" }}>Languages:</span>{" "}
                   JavaScript, C#, Java, Python, C, PHP, HTML/CSS
                 </p>
@@ -37,17 +38,17 @@ export function Skills() {
                   <span style={{ color: "yellow" }}>Frameworks:</span> React
                   Native, VueJS, Angular, Django, Flask
                 </p>
-                <p className="skillsText">
+                <p className={styles.skillsText}>
                   <span style={{ color: "yellow" }}>Libraries:</span> React,
                   Redux, Bootstrap, Express.js, NodeJs
                 </p>
 
-                <p className="skillsText">
+                <p className={styles.skillsText}>
                   <span style={{ color: "yellow" }}>Database:</span> SQL, NoSQL,
                   MongoDB, MySQL, SQL Server
                 </p>
 
-                <p className="skillsText">
+                <p className={styles.skillsText}>
                   <span style={{ color: "yellow" }}>API:</span> RESTful,
                   GraphQL, AWS Amplify Serverless
                 </p>
@@ -55,17 +56,17 @@ export function Skills() {
             </LightSpeed>
 
             <Slide right cascade>
-              <div className="container">
-                <p className="skillHeader">Technologies</p>
-                <span className="skillsText">
+              <div className={styles.container}>
+                <p className={styles.skillHeader}>Technologies</p>
+                <span className={styles.skillsText}>
                   NET, .NET Core, ASP.NET MVC, Maven, Sprint Boot, Docker, Git,
                   Eclipse, Visual Studio Code, Linux, Salesforce, Skuid
                 </span>
               </div>
 
-              <div className="container">
-                <p className="skillHeader">Skills</p>
-                <span className="skillsText">
+              <div className={styles.container}>
+                <p className={styles.skillHeader}>Skills</p>
+                <span className={styles.skillsText}>
                   {" "}
                   Unit testing, MERN stack, API design, OOP, TDD, SOLID, Design
                   Patterns, UI/UX, Data Structures, Algorithms, Agile, Scrum
