@@ -8,7 +8,7 @@ export function NBackground() {
       params={{
         particles: {
           number: {
-            value: 60,
+            value: 90,
             density: {
               enable: true,
               value_area: 1500
@@ -23,7 +23,7 @@ export function NBackground() {
             speed: 0.05
           },
           size: {
-            value: 1
+            value: 3
           },
           opacity: {
             anim: {

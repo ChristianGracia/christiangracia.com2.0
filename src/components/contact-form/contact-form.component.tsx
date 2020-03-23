@@ -6,12 +6,12 @@ import styles from "./contact-form.module.scss";
 
 import React, { useState } from "react";
 
-interface IMessage {
-  text: string;
-  email: string;
-}
+// interface IMessage {
+//   text: string;
+//   email: string;
+// }
 export function ContactForm(): JSX.Element {
-  const [message, setMessage] = React.useState<string>("");
+  // const [message, setMessage] = React.useState<string>("");
   return (
     <div style={{ position: "relative" }}>
       <div className={styles.contactPageContainer}>
