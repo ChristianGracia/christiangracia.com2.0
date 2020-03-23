@@ -4,9 +4,14 @@ import { Button } from "react-bootstrap";
 import * as LightSpeed from "react-reveal/LightSpeed";
 import styles from "./contact-form.module.scss";
 
-import React from "react";
+import React, { useState } from "react";
 
-export function ContactForm() {
+interface IMessage {
+  text: string;
+  email: string;
+}
+export function ContactForm(): JSX.Element {
+  const [message, setMessage] = React.useState<string>("");
   return (
     <div style={{ position: "relative" }}>
       <div className={styles.contactPageContainer}>
