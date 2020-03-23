@@ -10,20 +10,25 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: -20vh;
 }
 .formLabel {
   font-weight: bold;
   color: #fff;
-  padding-right: 5px;
+  // padding-right: 5px;
 }
 .formRow {
   align-items: center;
   justify-content: center;
   margin-top: 20px;
+  text-align: center;
 }
 
 .formRowAligner {
   justify-content: center;
   align-items: center;
+}
+@media only screen and (max-width: 400px) {
+  .contactPageContainer {
+    padding-top: 150px;
+  }
 }

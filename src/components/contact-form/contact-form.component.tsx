@@ -1,7 +1,6 @@
-// import React, { Component } from "react";
 import * as Jump from "react-reveal/Jump";
 import { Button } from "react-bootstrap";
-// import "./contact-page.styles.css";
+
 import * as LightSpeed from "react-reveal/LightSpeed";
 import styles from "./contact-form.module.scss";
 
@@ -25,9 +24,7 @@ export function ContactForm() {
         <div className={styles.contactFormContainer}>
           <Jump>
             <form action="https://sendpoint.io/id/gWFzbxh9O" method="POST">
-              <div className="row form-row-aligner">
-                <span className={styles.formLabel}>Email: </span>
-
+              <div className={styles.formRow}>
                 <input
                   type="email"
                   name="email"
@@ -37,13 +34,17 @@ export function ContactForm() {
                 />
               </div>
 
-              <div className={styles.formRow}>
-                <span className="form-label">Message</span>
-              </div>
-
-              <div className={styles.formRow}>
+              <div
+                className={styles.formRow}
+                style={{
+                  display: "flex",
+                  justifyContent: "center",
+                  alignItems: "center"
+                }}
+              >
                 <textarea
-                  rows={4}
+                  rows={5}
+                  cols={30}
                   name="body"
                   placeholder="Leave a message"
                   //   value={this.state.body}
@@ -66,7 +67,6 @@ export function ContactForm() {
               </div>
             </form>
           </Jump>
-          <div style={{ paddingBottom: 600 }}></div>
         </div>
       </div>
     </div>
