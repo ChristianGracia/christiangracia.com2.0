@@ -19,18 +19,6 @@ export function ProjectDisplay() {
       <i className="fas fa-code iconStyle"></i>
 
       <ProjectBox
-        codeLink={"https://github.com/ChristianGracia/onabeat.com"}
-        title={"onabeat.com"}
-        description={
-          "MERN stack site I wrote and host for my friends in On a Beat. Hosted on Heroku on a single server. React/Redux front-end with a Node Js back-end and a MongoDB database. Users can make accounts, sign in, add/delete videos and songs to front page, and more with a protected dashboard I built."
-        }
-        tweet={"1207152863434231808"}
-        siteLink={"http://onabeat.com"}
-      />
-
-      <i className="fas fa-code iconStyle"></i>
-
-      <ProjectBox
         codeLink={
           "https://github.com/ChristianGracia/Dental-iOSApp-React-Native"
         }

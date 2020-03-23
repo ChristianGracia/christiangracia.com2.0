@@ -31,13 +31,22 @@ export function BuiltSites(): JSX.Element {
           style={{
             maxWidth: 800,
             margin: "0 auto",
-            display: "flex",
-            flexDirection: "row",
-            flexWrap: "wrap",
+            // display: "flex",
+            // flexDirection: "row",
+            // flexWrap: "wrap",
             minWidth: 290,
             padding: 20
           }}
         >
+          <ProjectBox
+            codeLink={"https://github.com/ChristianGracia/onabeat.com"}
+            title={"onabeat.com"}
+            description={
+              "MERN stack site I wrote and host for my friends in On a Beat. Hosted on Heroku on a single server. React/Redux front-end with a Node Js back-end and a MongoDB database. Users can make accounts, sign in, add/delete videos, songs, pics, and gifs to front page, and more with a site dashboard I built."
+            }
+            tweet={"1207152863434231808"}
+            siteLink={"http://onabeat.com"}
+          />{" "}
           <Carousel>
             <div>
               <img src={onabeatPic} />
@@ -46,17 +55,23 @@ export function BuiltSites(): JSX.Element {
               <img src={onabeatPic2} />
             </div>
           </Carousel>
+          <div
+            style={{
+              color: "white",
+              fontSize: 50
+            }}
+          >
+            <i className="fas fa-code iconStyle"></i>
+          </div>
           <ProjectBox
-            codeLink={"https://github.com/ChristianGracia/onabeat.com"}
-            title={"onabeat.com"}
+            codeLink={"https://github.com/ChristianGracia/nflandscaping.com"}
+            title={"Nature's Frontier Landscaping"}
             description={
-              "MERN stack site I wrote and host for my friends in On a Beat. Hosted on Heroku on a single server. React/Redux front-end with a Node Js back-end and a MongoDB database. Users can make accounts, sign in, add/delete videos and songs to front page, and more with a protected dashboard I built."
+              "React front-end + NodeJS back-end site I made for Nature's Frontier Landscaping"
             }
-            tweet={"1207152863434231808"}
-            siteLink={"http://onabeat.com"}
+            tweet={"1173662545464451075"}
+            siteLink={"http://nflandscaping.com"}
           />
-
-          <i className="fas fa-code iconStyle"></i>
           <Carousel>
             <div>
               <img src={nflPic} />
@@ -65,16 +80,6 @@ export function BuiltSites(): JSX.Element {
               <img src={nflPic2} />
             </div>
           </Carousel>
-
-          <ProjectBox
-            codeLink={"https://github.com/ChristianGracia/nflandscaping.com"}
-            title={"Nature's Frontier Landscaping"}
-            description={
-              "Over 11,000+ lines of React Native code. Users can email the front desk, view detailed info and images about services offered, leave suggestions, and more!"
-            }
-            tweet={"1173662545464451075"}
-            siteLink={"http://nflandscaping.com"}
-          />
         </div>
         {/*
         <div>

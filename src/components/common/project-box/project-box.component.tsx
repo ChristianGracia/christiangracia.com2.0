@@ -9,15 +9,24 @@ export const ProjectBox = (props: any) => {
         display: "flex",
         justifyContent: "center",
         flexDirection: "column",
-        textAlign: "center"
+        textAlign: "center",
+        marginTop: 30,
+        marginBottom: 30
       }}
     >
       <div
-        style={{ color: "black", backgroundColor: "white", borderRadius: 19 }}
+        style={{
+          color: "black",
+          backgroundColor: "white",
+          borderRadius: 19,
+          padding: 20
+        }}
       >
-        <p className="title">
+        <p className="title" style={{ marginTop: 30 }}>
           <a className="linkStyle" href={props.siteLink}>
-            <span style={{ fontWeight: "bold" }}>{props.title}</span>
+            <span style={{ fontWeight: "bold", fontSize: 20 }}>
+              {props.title}
+            </span>
           </a>
         </p>
         <p className="description" style={{ maxWidth: 900 }}>
