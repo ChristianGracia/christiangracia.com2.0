@@ -6,7 +6,7 @@ export function SBackground() {
     <Particles
       style={{
         width: "100%",
-        background: "black"
+        background: "#3993EC"
       }}
       params={{
         particles: {

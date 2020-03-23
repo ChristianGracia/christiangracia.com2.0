@@ -5,6 +5,7 @@ import { Github } from "../../components/github/github.component";
 import styles from "./projects.module.scss";
 
 import { OtherProjects } from "../../components/other-projects/other-projects.component";
+import { ThisSite } from "../../components/this-site/this-site.component";
 
 export function ProjectsPage() {
   return (
@@ -13,6 +14,7 @@ export function ProjectsPage() {
         <SBackground />
       </div>
       <div>
+        <ThisSite />
         <BuiltSites />
         <Github />
         <div style={{ maxWidth: 506, margin: "0 auto" }}>

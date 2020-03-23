@@ -9,7 +9,7 @@ export function OtherProjects() {
         <span
           style={{
             fontWeight: "bold",
-            fontSize: 40,
+            fontSize: 30,
             marginBottom: 30,
             borderBottom: "solid 1px white",
             maxWidth: 700,

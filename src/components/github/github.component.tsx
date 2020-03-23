@@ -4,7 +4,7 @@ import Fade from "react-reveal/Fade";
 import { Button } from "react-bootstrap";
 import styles from "./github.styles.module.scss";
 
-export function Github() {
+export function Github(): JSX.Element {
   const fetchDataAction = async () => {
     const clientId = require("../../config/keys").clientId;
     const clientSecret = require("../../config/keys").clientSecret;

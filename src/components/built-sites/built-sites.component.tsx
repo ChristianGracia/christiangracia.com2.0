@@ -25,7 +25,7 @@ export function BuiltSites(): JSX.Element {
   return (
     <Fade left cascade>
       <div className={styles.sitesContainer}>
-        <span className={styles.sitesHeader}>Other Sites</span>
+        <span className={styles.sitesHeader}>Sites I Built</span>
 
         <div
           style={{
@@ -57,8 +57,8 @@ export function BuiltSites(): JSX.Element {
           </Carousel>
           <div
             style={{
-              color: "white",
-              fontSize: 50
+              color: "#FDFE01",
+              fontSize: 40
             }}
           >
             <i className="fas fa-code iconStyle"></i>
