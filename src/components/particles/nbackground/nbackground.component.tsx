@@ -4,6 +4,7 @@ import { Particles } from "react-particles-js";
 export function NBackground() {
   return (
     <Particles
+      style={{ backgroundColor: "#3993EC" }}
       params={{
         particles: {
           number: {

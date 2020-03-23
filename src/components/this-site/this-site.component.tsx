@@ -31,11 +31,12 @@ export function ThisSite() {
         }}
       >
         <div style={{ margin: "0 auto" }}>
-          <img src={cg} style={{ maxWidth: "60vw" }} />
+          <img src={cg} style={{ width: "90vw", maxWidth: 600 }} />
         </div>
         <span style={{ marginTop: 30, color: "white" }}>
           This site is written in Typescript using only functional components
-          and React Hooks. React/Redux front-end with a NodeJS back-end API.
+          and React Hooks. React/Redux + Sass front-end with a NodeJS back-end
+          API.
         </span>
         <div style={{ marginTop: 30 }}>
           <Button
