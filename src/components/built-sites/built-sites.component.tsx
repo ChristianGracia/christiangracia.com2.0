@@ -9,6 +9,8 @@ import { Carousel } from "react-responsive-carousel";
 
 const nflPic = require("../../assets/nflpic.PNG");
 const onabeatPic = require("../../assets/onabeatpic.PNG");
+const nflPic2 = require("../../assets/nflpic2.PNG");
+const onabeatPic2 = require("../../assets/onabeat2.PNG");
 // const content = [
 //   {
 //     image: nflPic
@@ -24,13 +26,31 @@ export function BuiltSites(): JSX.Element {
       <div className={styles.sitesContainer}>
         <span className={styles.sitesHeader}>Other Sites</span>
 
-        <div style={{ position: "relative" }}>
+        <div
+          style={{
+            maxWidth: 800,
+            margin: "0 auto",
+            display: "flex",
+            flexDirection: "row",
+            flexWrap: "wrap",
+            minWidth: 290,
+            padding: 20
+          }}
+        >
           <Carousel>
             <div>
               <img src={onabeatPic} />
             </div>
             <div>
+              <img src={onabeatPic2} />
+            </div>
+          </Carousel>
+          <Carousel>
+            <div>
               <img src={nflPic} />
+            </div>
+            <div>
+              <img src={nflPic2} />
             </div>
           </Carousel>
         </div>
