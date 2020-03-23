@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import Fade from "react-reveal/Fade";
 import { Button } from "react-bootstrap";
-import styles from "./github.styles.module.scss";
+import styles from "./github.module.scss";
 
 export function Github(): JSX.Element {
   const fetchDataAction = async () => {
@@ -125,19 +125,7 @@ export function Github(): JSX.Element {
   return (
     <div>
       <div style={{ position: "relative", textAlign: "center" }}>
-        <span
-          style={{
-            fontWeight: "bold",
-            fontSize: 40,
-            marginBottom: 30,
-            borderBottom: "solid 1px white",
-            maxWidth: 700,
-            minWidth: 280,
-            width: "90vw",
-            margin: "0 auto",
-            color: "#feff01"
-          }}
-        >
+        <span className={styles.githubHeader}>
           {" "}
           Latest Github Repos <i className="fab fa-github"></i>{" "}
         </span>
