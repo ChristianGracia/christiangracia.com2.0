@@ -35,21 +35,21 @@ export function Skills() {
                     fontWeight: "bold"
                   }}
                 >
-                  <span style={{ color: "yellow" }}>Frameworks:</span> React
+                  <span className={styles.techItem}>Frameworks:</span> React
                   Native, VueJS, Angular, Django, Flask
                 </p>
                 <p className={styles.skillsText}>
-                  <span style={{ color: "yellow" }}>Libraries:</span> React,
+                  <span className={styles.techItem}>Libraries:</span> React,
                   Redux, Bootstrap, Express.js, NodeJs
                 </p>
 
                 <p className={styles.skillsText}>
-                  <span style={{ color: "yellow" }}>Database:</span> SQL, NoSQL,
+                  <span className={styles.techItem}>Database:</span> SQL, NoSQL,
                   MongoDB, MySQL, SQL Server
                 </p>
 
                 <p className={styles.skillsText}>
-                  <span style={{ color: "yellow" }}>API:</span> RESTful,
+                  <span className={styles.techItem}>API:</span> RESTful,
                   GraphQL, AWS Amplify Serverless
                 </p>
               </div>
