@@ -69,7 +69,9 @@ export function Github(): JSX.Element {
                           className="text-info"
                           target="_blank"
                         >
-                          <p style={{ color: "#3993EC" }}>{repo.name}</p>
+                          <p style={{ color: "#007BFF", fontWeight: "bold" }}>
+                            {repo.name}
+                          </p>
                         </Link>
                       </h4>
                       <span style={{ fontSize: 20 }}>{repo.description}</span>
