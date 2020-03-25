@@ -20,15 +20,7 @@ export function BuiltSites(): JSX.Element {
       <div className={styles.sitesContainer}>
         <SiteTitle title="Sites I've Built" />
 
-        <div
-          style={{
-            maxWidth: 700,
-            width: "60%",
-            minWidth: 280,
-            margin: "0 auto",
-            padding: 10
-          }}
-        >
+        <div className={styles.projectContainer}>
           <ProjectBox
             codeLink={"https://github.com/ChristianGracia/onabeat.com"}
             title={"onabeat.com"}
@@ -52,12 +44,7 @@ export function BuiltSites(): JSX.Element {
               <img src={onabeatPic3} alt="Login screen for website I made" />
             </div>
           </Carousel>
-          <div
-            style={{
-              color: "#FDFE01",
-              fontSize: 40
-            }}
-          >
+          <div className={styles.iconColor}>
             <i className="fas fa-code iconStyle"></i>
           </div>
           <ProjectBox
@@ -90,39 +77,6 @@ export function BuiltSites(): JSX.Element {
             </div>
           </Carousel>
         </div>
-        {/*
-        <div>
-          <img
-            className={styles.siteImages}
-            src={onabeatPic}
-            alt="onabeat multimedia site I built"
-          />
-        </div>
-        <div>
-          <img
-            className={styles.siteImages}
-            alt="natures frontier landscaping site I built"
-            src={nflPic}
-          />
-        </div>
-
-        <span
-          className={styles.sitesDiv}
-          style={{ marginTop: 30, marginBottom: 30 }}
-        >
-          <a className="btn btn-danger" href="https://www.nflandscaping.com">
-            nflandscaping.com
-          </a>
-        </span>
-        <span
-          className={styles.sitesDiv}
-          style={{ marginTop: 30, marginBottom: 30 }}
-        >
-          <a className=" btn btn-danger" href="https://www.onabeat.com">
-            onabeat.com
-          </a>
-        </span>
-              */}
       </div>
     </Fade>
   );
