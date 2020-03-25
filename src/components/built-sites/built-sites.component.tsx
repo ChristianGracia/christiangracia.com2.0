@@ -30,7 +30,7 @@ export function BuiltSites(): JSX.Element {
             tweet={"1207152863434231808"}
             siteLink={"http://onabeat.com"}
           />{" "}
-          <Carousel>
+          <Carousel autoPlay="true" infiniteLoop="true">
             <div>
               <img src={onabeatPic} alt="Main page of onabeat.com" />
             </div>
@@ -56,7 +56,7 @@ export function BuiltSites(): JSX.Element {
             tweet={"1173662545464451075"}
             siteLink={"http://nflandscaping.com"}
           />
-          <Carousel>
+          <Carousel autoPlay="true" infiniteLoop="true">
             <div>
               <img
                 src={nflPic}
