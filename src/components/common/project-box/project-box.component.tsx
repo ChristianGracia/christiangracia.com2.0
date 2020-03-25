@@ -1,6 +1,5 @@
 import React from "react";
 import { Button } from "react-bootstrap";
-import { BBackground } from "../../particles/bbackground/bbackground.component";
 import styles from "./project-box.module.scss";
 
 export const ProjectBox = (props: any) => {

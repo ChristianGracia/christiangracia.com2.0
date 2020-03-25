@@ -50,13 +50,16 @@ export function BuiltSites(): JSX.Element {
           />{" "}
           <Carousel>
             <div>
-              <img src={onabeatPic} />
+              <img src={onabeatPic} alt="Main page of onabeat.com" />
             </div>
             <div>
-              <img src={onabeatPic2} />
+              <img
+                src={onabeatPic2}
+                alt="Admin dashboard where they can edit what is on their site that I made from scratch"
+              />
             </div>
             <div>
-              <img src={onabeatPic3} />
+              <img src={onabeatPic3} alt="Login screen for website I made" />
             </div>
           </Carousel>
           <div
@@ -78,13 +81,22 @@ export function BuiltSites(): JSX.Element {
           />
           <Carousel>
             <div>
-              <img src={nflPic} />
+              <img
+                src={nflPic}
+                alt="Natures view of Frontier's landscaping website I made"
+              />
             </div>
             <div>
-              <img src={nflPic2} />
+              <img
+                src={nflPic2}
+                alt="Another view of Natures Frontier's landscaping website I made"
+              />
             </div>
             <div>
-              <img src={nflPic3} />
+              <img
+                src={nflPic3}
+                alt="One more view of Natures Frontier's landscaping website I made"
+              />
             </div>
           </Carousel>
         </div>

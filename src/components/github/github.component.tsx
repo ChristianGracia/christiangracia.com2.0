@@ -3,8 +3,8 @@ import { Link } from "react-router-dom";
 import Fade from "react-reveal/Fade";
 import { Button } from "react-bootstrap";
 import styles from "./github.module.scss";
-import * as LazyLoad from "react-lazyload";
-import { Spinner } from "../common/spinner/spinner.component";
+// import * as LazyLoad from "react-lazyload";
+// import { Spinner } from "../common/spinner/spinner.component";
 
 export function Github(): JSX.Element {
   const fetchDataAction = async () => {

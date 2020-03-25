@@ -4,7 +4,7 @@ import { Button } from "react-bootstrap";
 import * as LightSpeed from "react-reveal/LightSpeed";
 import styles from "./contact-form.module.scss";
 
-import React, { useState } from "react";
+import React from "react";
 
 // interface IMessage {
 //   text: string;
