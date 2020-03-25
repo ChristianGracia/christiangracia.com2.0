@@ -32,13 +32,11 @@ export function BuiltSites(): JSX.Element {
 
         <div
           style={{
-            maxWidth: 800,
+            maxWidth: 700,
+            width: "60%",
+            minWidth: 280,
             margin: "0 auto",
-            // display: "flex",
-            // flexDirection: "row",
-            // flexWrap: "wrap",
-            minWidth: 270,
-            padding: 20
+            padding: 10
           }}
         >
           <ProjectBox

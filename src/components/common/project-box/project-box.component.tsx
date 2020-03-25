@@ -19,7 +19,7 @@ export const ProjectBox = (props: any) => {
           color: "black",
           backgroundColor: "white",
           borderRadius: 19,
-          padding: 20
+          padding: 5
         }}
       >
         <p className="title" style={{ marginTop: 30 }}>
@@ -29,7 +29,7 @@ export const ProjectBox = (props: any) => {
             </span>
           </a>
         </p>
-        <p className="description" style={{ maxWidth: 900, minWidth: 270 }}>
+        <p className="description" style={{ maxWidth: 900, minWidth: 240 }}>
           {props.description}
         </p>
         <div style={{ marginTop: 30, marginBottom: 30 }}>

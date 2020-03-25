@@ -13,7 +13,7 @@ export function ThisSite() {
             marginBottom: 30,
             borderBottom: "solid 1px white",
             maxWidth: 700,
-            minWidth: 300,
+            minWidth: 280,
             margin: "0 auto",
             color: "#feff01"
           }}
@@ -31,7 +31,7 @@ export function ThisSite() {
         }}
       >
         <div style={{ margin: "0 auto" }}>
-          <img src={cg} style={{ width: "90vw", maxWidth: 600 }} />
+          <img src={cg} style={{ width: "80vw", maxWidth: 600 }} />
         </div>
         <span style={{ marginTop: 30, color: "white" }}>
           This site is written in Typescript using only functional components
