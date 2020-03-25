@@ -3,7 +3,7 @@ import { ProjectBox } from "../project-box/project-box.component";
 
 export function ProjectDisplay(): JSX.Element {
   return (
-    <div style={{ padding: 20 }}>
+    <div style={{ padding: 20, maxWidth: 500, margin: "0 auto" }}>
       <div style={{ backgroundColor: "white" }}>
         <ProjectBox
           codeLink={
