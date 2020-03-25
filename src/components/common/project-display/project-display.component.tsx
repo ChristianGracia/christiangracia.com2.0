@@ -1,10 +1,11 @@
 import React from "react";
 import { ProjectBox } from "../project-box/project-box.component";
+import styles from "./project-display.module.scss";
 
 export function ProjectDisplay(): JSX.Element {
   return (
-    <div style={{ padding: 20, maxWidth: 500, margin: "0 auto" }}>
-      <div style={{ backgroundColor: "white" }}>
+    <div className={styles.container}>
+      <div className={styles.boxColor}>
         <ProjectBox
           codeLink={
             "https://github.com/ChristianGracia/Java-Financial-Web-Scraper"
@@ -17,7 +18,7 @@ export function ProjectDisplay(): JSX.Element {
           siteLink={""}
         />
       </div>
-      <div style={{ backgroundColor: "white" }}>
+      <div className={styles.boxColor}>
         <ProjectBox
           codeLink={
             "https://github.com/ChristianGracia/Dental-iOSApp-React-Native"
