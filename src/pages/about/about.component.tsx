@@ -10,7 +10,7 @@ export function AboutPage(): JSX.Element {
       <div className={styles.particleBackground}>
         <BBackground />
       </div>
-      <SiteTitle />
+      <SiteTitle title="About" />
       <Skills />
     </div>
   );
