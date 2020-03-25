@@ -4,7 +4,7 @@ import { Button } from "react-bootstrap";
 import styles from "./this-site.module.scss";
 const cg = require("../../assets/christiangraciacode.PNG");
 
-export function ThisSite() {
+export function ThisSite(): JSX.Element {
   return (
     <div className={styles.pageContainer}>
       <div>

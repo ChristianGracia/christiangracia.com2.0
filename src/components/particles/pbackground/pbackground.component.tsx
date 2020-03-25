@@ -2,7 +2,7 @@ import React from "react";
 import { Particles } from "react-particles-js";
 import styles from "./pbackground.module.scss";
 
-export function PBackground() {
+export function PBackground(): JSX.Element {
   return (
     <Particles
       className={styles.particleBackground}

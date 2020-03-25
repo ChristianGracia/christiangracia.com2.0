@@ -3,7 +3,7 @@ import { BBackground } from "../../components/particles/bbackground/bbackground.
 import { Skills } from "../../components/skills/skills.component";
 import styles from "./about.module.scss";
 
-export function AboutPage() {
+export function AboutPage(): JSX.Element {
   return (
     <div className={styles.aboutContainer}>
       <div className={styles.particleBackground}>

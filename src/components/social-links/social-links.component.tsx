@@ -1,7 +1,7 @@
 import React from "react";
 import "./social-links.module.scss";
 
-export function SocialLinks() {
+export function SocialLinks(): JSX.Element {
   return (
     <div style={{ textAlign: "center" }} className="social-links">
       <a href="https://github.com/ChristianGracia">

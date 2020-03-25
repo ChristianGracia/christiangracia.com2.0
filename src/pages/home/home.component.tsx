@@ -5,7 +5,7 @@ import { MainInfo } from "../../components/main-info/main-info.component";
 import { ExploreButton } from "../../components/explore-button/explore-button.component";
 import { SiteInfo } from "../../components/site-info/site-info.component";
 
-export function HomePage() {
+export function HomePage(): JSX.Element {
   return (
     <div className={styles.homeContainer}>
       <div className={styles.particleBackground}>

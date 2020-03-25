@@ -3,7 +3,7 @@ import { NBackground } from "../../components/particles/nbackground/nbackground.
 import { ContactForm } from "../../components/contact-form/contact-form.component";
 import styles from "./contact.module.scss";
 
-export function ContactPage() {
+export function ContactPage(): JSX.Element {
   return (
     <div className={styles.contactContainer}>
       <div className={styles.particleBackground}>

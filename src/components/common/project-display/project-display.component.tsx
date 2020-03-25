@@ -1,7 +1,7 @@
 import React from "react";
 import { ProjectBox } from "../project-box/project-box.component";
 
-export function ProjectDisplay() {
+export function ProjectDisplay(): JSX.Element {
   return (
     <div style={{ padding: 20 }}>
       <div style={{ backgroundColor: "white" }}>

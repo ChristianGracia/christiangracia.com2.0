@@ -1,7 +1,7 @@
 import React from "react";
 import { Particles } from "react-particles-js";
 
-export function SBackground() {
+export function SBackground(): JSX.Element {
   return (
     <Particles
       style={{

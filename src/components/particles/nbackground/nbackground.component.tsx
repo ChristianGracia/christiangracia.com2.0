@@ -1,7 +1,7 @@
 import React from "react";
 import { Particles } from "react-particles-js";
 
-export function NBackground() {
+export function NBackground(): JSX.Element {
   return (
     <Particles
       style={{ backgroundColor: "#3993EC" }}

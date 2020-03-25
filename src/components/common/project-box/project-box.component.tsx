@@ -2,7 +2,7 @@ import React from "react";
 import { Button } from "react-bootstrap";
 import styles from "./project-box.module.scss";
 
-export const ProjectBox = (props: any) => {
+export const ProjectBox = (props: any): JSX.Element => {
   return (
     <div className={styles.container}>
       <div className={styles.box}>
