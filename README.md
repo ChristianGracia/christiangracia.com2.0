@@ -10,7 +10,13 @@ old website code: https://github.com/ChristianGracia/christiangracia.com (JavaSc
 
 ## Installation
 
+clone this repo and then create your keys
+
 ### Keys
+
+This app requires github API credentials to retrieve and display your repo info
+
+---
 
 make a directory in the src folder called config
 
@@ -24,8 +30,6 @@ clientSecret: "dca203343434343424323107a0"
 };
 
 ### After keys added
-
-clone this repo and run the following in command line:
 
 `npm install`
 
