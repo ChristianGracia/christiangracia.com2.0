@@ -83,22 +83,30 @@ export function Github(): JSX.Element {
                     >
                       <span
                         className={styles.updatedText}
-                        style={{ color: "#3892EB" }}
+                        // style={{ color: "#3892EB" }}
                       >
                         Last updated at:{" "}
                       </span>
-                      <span style={{ color: "black", fontWeight: "bold" }}>
+                      <span
+                        style={{
+                          color: "black",
+                          fontWeight: "bold",
+                          fontSize: 20
+                        }}
+                      >
                         {getUpdateTime(repo.updated_at)}
                       </span>
 
                       <div
-                        className=""
-                        style={{ textAlign: "center", flexWrap: "wrap" }}
+                        className="badge badge-danger"
+                        style={{
+                          textAlign: "center",
+                          flexWrap: "wrap",
+                          margin: 5
+                        }}
                       >
                         <span> Language: </span>
-                        <span className="badge badge-danger">
-                          {repo.language}
-                        </span>
+                        <span>{repo.language}</span>
                         {/*
                         <span className="badge badge-info ">
                           <i className="fas fa-star"></i> Stars:{" "}
