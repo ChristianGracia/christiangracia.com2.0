@@ -2,6 +2,8 @@
 
 This repo contains the code for my personal website rewritten in typescript
 
-old code: https://github.com/ChristianGracia/christiangracia.com
+christiangracia.com
+
+old website code: https://github.com/ChristianGracia/christiangracia.com (JavaScript)
 
 will launch site and replace old code when complete
