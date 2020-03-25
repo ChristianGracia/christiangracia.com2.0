@@ -7,10 +7,10 @@ export function MainPage() {
   return (
     <div className={styles.pageContainer} style={{ backgroundColor: "black" }}>
       <div>
-        <ProjectsPage />
+        <AboutPage />
       </div>
       <div>
-        <AboutPage />
+        <ProjectsPage />
       </div>
     </div>
   );

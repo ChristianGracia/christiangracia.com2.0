@@ -4,12 +4,13 @@ import Fade from "react-reveal/Fade";
 import { Button } from "react-bootstrap";
 import styles from "./github.module.scss";
 import * as LazyLoad from "react-lazyload";
+import { Spinner } from "../common/spinner/spinner.component";
 
 export function Github(): JSX.Element {
   const fetchDataAction = async () => {
     const clientId = require("../../config/keys").clientId;
     const clientSecret = require("../../config/keys").clientSecret;
-    const URL = `https://api.github.com/users/ChristianGracia/repos?per_page=16&sort=createdasc&client_id=${clientId}&client_secret=${clientSecret}`;
+    const URL = `https://api.github.com/users/ChristianGracia/repos?per_page=10&sort=createdasc&client_id=${clientId}&client_secret=${clientSecret}`;
 
     const data = await fetch(URL);
     const dataJSON = await data.json();
@@ -157,7 +158,6 @@ export function Github(): JSX.Element {
           justifyContent: "space-around"
         }}
       >
-        {" "}
         {repoItems}
       </div>
     </div>
