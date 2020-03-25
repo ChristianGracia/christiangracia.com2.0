@@ -29,7 +29,7 @@ export const ProjectBox = (props: any) => {
             </span>
           </a>
         </p>
-        <p className="description" style={{ maxWidth: 900 }}>
+        <p className="description" style={{ maxWidth: 900, minWidth: 270 }}>
           {props.description}
         </p>
         <div style={{ marginTop: 30, marginBottom: 30 }}>

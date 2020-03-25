@@ -37,7 +37,7 @@ export function BuiltSites(): JSX.Element {
             // display: "flex",
             // flexDirection: "row",
             // flexWrap: "wrap",
-            minWidth: 290,
+            minWidth: 270,
             padding: 20
           }}
         >

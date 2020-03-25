@@ -13,14 +13,13 @@ export function ProjectsPage() {
       <div className={styles.particleBackground} style={{}}>
         <SBackground />
       </div>
-      <div>
-        <ThisSite />
-        <BuiltSites />
-        <Github />
-        <div style={{ maxWidth: 506, margin: "0 auto" }}>
-          <OtherProjects />
-        </div>
-      </div>
+
+      <ThisSite />
+      <BuiltSites />
+      <Github />
+
+      <OtherProjects />
+
       <div style={{ padding: 60 }}></div>
     </div>
   );
