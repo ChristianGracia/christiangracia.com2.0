@@ -5,6 +5,7 @@ import { Button } from "react-bootstrap";
 import styles from "./github.module.scss";
 // import * as LazyLoad from "react-lazyload";
 // import { Spinner } from "../common/spinner/spinner.component";
+import { SiteTitle } from "../common/site-title/site-title.component";
 
 export function Github(): JSX.Element {
   const fetchDataAction = async () => {
@@ -137,12 +138,9 @@ export function Github(): JSX.Element {
   return (
     <div>
       <div style={{ position: "relative", textAlign: "center" }}>
-        <span className={styles.githubHeader}>
-          {" "}
-          Latest Github Repos <i className="fab fa-github"></i>{" "}
-        </span>
+        <SiteTitle title="Latest Github Repos" />
         <div style={{ marginTop: 35, marginBottom: 35 }}>
-          <Button onClick={() => hideRepos()}>
+          <Button variant="danger" onClick={() => hideRepos()}>
             {githubData === undefined ? "Show " : "Hide "}
             Projects
           </Button>

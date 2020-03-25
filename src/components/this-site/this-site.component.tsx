@@ -2,14 +2,13 @@ import React from "react";
 import { Button } from "react-bootstrap";
 
 import styles from "./this-site.module.scss";
+import { SiteTitle } from "../common/site-title/site-title.component";
 const cg = require("../../assets/christiangraciacode.PNG");
 
 export function ThisSite(): JSX.Element {
   return (
     <div className={styles.pageContainer}>
-      <div>
-        <span className={styles.siteHeader}>christiangracia.com</span>
-      </div>
+      <SiteTitle title="christiangracia.com" />
       <div className={styles.container}>
         <div>
           <img

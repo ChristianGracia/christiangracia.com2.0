@@ -5,6 +5,7 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
 
 import { ProjectBox } from "../common/project-box/project-box.component";
+import { SiteTitle } from "../common/site-title/site-title.component";
 
 const onabeatPic = require("../../assets/onabeatpic.PNG");
 const onabeatPic2 = require("../../assets/onabeat2.PNG");
@@ -17,7 +18,7 @@ export function BuiltSites(): JSX.Element {
   return (
     <Fade left cascade>
       <div className={styles.sitesContainer}>
-        <span className={styles.sitesHeader}>Sites I Built</span>
+        <SiteTitle title="Sites I've Built" />
 
         <div
           style={{
