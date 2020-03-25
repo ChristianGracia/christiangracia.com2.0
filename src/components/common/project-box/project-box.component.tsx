@@ -1,38 +1,19 @@
 import React from "react";
 import { Button } from "react-bootstrap";
 import { BBackground } from "../../particles/bbackground/bbackground.component";
+import styles from "./project-box.module.scss";
 
 export const ProjectBox = (props: any) => {
   return (
-    <div
-      style={{
-        display: "flex",
-        justifyContent: "center",
-        flexDirection: "column",
-        textAlign: "center",
-        marginTop: 30,
-        marginBottom: 30
-      }}
-    >
-      <div
-        style={{
-          color: "black",
-          backgroundColor: "white",
-          borderRadius: 19,
-          padding: 5
-        }}
-      >
-        <p className="title" style={{ marginTop: 30 }}>
+    <div className={styles.container}>
+      <div className={styles.box}>
+        <p className={styles.title}>
           <a className="linkStyle" href={props.siteLink}>
-            <span style={{ fontWeight: "bold", fontSize: 20 }}>
-              {props.title}
-            </span>
+            <span>{props.title}</span>
           </a>
         </p>
-        <p className="description" style={{ maxWidth: 900, minWidth: 240 }}>
-          {props.description}
-        </p>
-        <div style={{ marginTop: 30, marginBottom: 30 }}>
+        <p className={styles.description}>{props.description}</p>
+        <div className={styles.buttonDiv}>
           <Button
             onClick={() => (window.location.href = props.codeLink)}
             variant="danger"
