@@ -87,10 +87,7 @@ export function Github(): JSX.Element {
                       }}
                     >
                       <span>
-                        <span
-                          className={styles.updatedText}
-                          // style={{ color: "#3892EB" }}
-                        >
+                        <span className={styles.updatedText}>
                           Last updated at:{" "}
                         </span>
                         <span
@@ -141,25 +138,32 @@ export function Github(): JSX.Element {
     <div>
       <div style={{ position: "relative", textAlign: "center" }}>
         <SiteTitle title="Latest Github Repos" />
-        <div style={{ marginTop: 35, marginBottom: 35 }}>
-          <Button variant="danger" onClick={() => hideRepos()}>
-            {githubData === undefined ? "Show " : "Hide "}
-            Projects
-          </Button>
+        <div
+          style={{
+            margin: 35
+          }}
+        >
+          <div>
+            <Button variant="danger" onClick={() => hideRepos()}>
+              {githubData === undefined ? "Show " : "Hide "}
+              projects
+            </Button>
+          </div>
+          <div className="mt-5">
+            <span className={styles.codeText}>
+              This functional component uses React Hooks to call GitHub's API
+              and render my repos on my site
+            </span>
+          </div>
+          <div className="m-5">
+            <Button variant="danger" onClick={() => hideRepos()}>
+              Code for this component
+            </Button>
+          </div>
         </div>
       </div>
 
-      <div
-        style={{
-          fontSize: 30,
-          display: "flex",
-          flexDirection: "row",
-          flexWrap: "wrap",
-          justifyContent: "space-around"
-        }}
-      >
-        {repoItems}
-      </div>
+      <div className={styles.repoContainer}>{repoItems}</div>
     </div>
   );
 }

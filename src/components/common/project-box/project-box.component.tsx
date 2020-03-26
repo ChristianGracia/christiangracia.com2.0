@@ -17,7 +17,7 @@ export const ProjectBox = (props: any): JSX.Element => {
             onClick={() => (window.location.href = props.codeLink)}
             variant="danger"
           >
-            Link to Code
+            Link to code
           </Button>
         </div>
       </div>
