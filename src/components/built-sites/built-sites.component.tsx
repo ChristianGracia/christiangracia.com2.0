@@ -7,10 +7,11 @@ import { Carousel } from "react-responsive-carousel";
 import { ProjectBox } from "../common/project-box/project-box.component";
 import { SiteTitle } from "../common/site-title/site-title.component";
 
-const onabeatPic = require("../../assets/onabeatpic.PNG");
+const onabeatPic = require("../../assets/onabeat.JPG");
 const onabeatPic2 = require("../../assets/onabeat2.PNG");
 const onabeatPic3 = require("../../assets/onabeat3.PNG");
-const nflPic = require("../../assets/nflpic.PNG");
+const onabeatPic4 = require("../../assets/onabeat4.JPG");
+const nflPic = require("../../assets/nflpic.JPG");
 const nflPic2 = require("../../assets/nflpic2.PNG");
 const nflPic3 = require("../../assets/nflpic3.PNG");
 
@@ -45,7 +46,7 @@ export function BuiltSites(): JSX.Element {
             </div>
           </Carousel>
           <div className={styles.iconColor}>
-            <i className="fas fa-code iconStyle"></i>
+            <i className="fas fa-code"></i>
           </div>
           <ProjectBox
             codeLink={"https://github.com/ChristianGracia/nflandscaping.com"}
