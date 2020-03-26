@@ -34,6 +34,9 @@ export function BBackground(): JSX.Element {
             onhover: {
               enable: true,
               mode: "repulse"
+            },
+            onClick: {
+              mode: "repulse"
             }
           }
         }

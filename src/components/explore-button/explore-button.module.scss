@@ -2,13 +2,22 @@
   display: flex;
   justify-content: center;
   margin-top: 14vh;
+  flex-direction: row;
 }
 .exploreButton {
+  color: #3993ec;
   text-align: center;
   font-weight: bold;
   font-size: 20px;
-  background-color: #feff01;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
   &:hover {
     background-color: #f8e800;
+    color: black;
   }
+}
+.iconColor {
+  color: #b928e6;
 }

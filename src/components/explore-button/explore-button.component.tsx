@@ -12,7 +12,12 @@ export function ExploreButton(): JSX.Element {
           className={styles.exploreButton}
           variant="light"
         >
-          Click here to see what I do <i className="far fa-hand-pointer"></i>
+          <span>Click to see what I do </span>
+          <div className="ml-1"></div>
+
+          <div className={styles.iconColor}>
+            <i className="fab fa-react fa-spin"></i>
+          </div>
         </Button>
       </div>
     </Fade>
