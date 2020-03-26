@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import Fade from "react-reveal/Fade";
-import { Button } from "react-bootstrap";
 import styles from "./github.module.scss";
 // import * as LazyLoad from "react-lazyload";
 // import { Spinner } from "../common/spinner/spinner.component";
@@ -144,22 +143,30 @@ export function Github(): JSX.Element {
             margin: 35
           }}
         >
-          <div>
-            <Button variant="danger" onClick={() => hideRepos()}>
-              {githubData === undefined ? "Show " : "Hide "}
-              projects
-            </Button>
-          </div>
-          <div className="mt-5">
-            <span className={styles.codeText}>
-              This functional component uses React Hooks to call GitHub's API
-              and render my repos on my site
-            </span>
-          </div>
+          <span className={styles.codeText}>
+            This functional component uses React Hooks to call GitHub's API and
+            render my repos on my site. Click on a repos name to see some code.
+          </span>
+
           <div className="m-2">
             <ButtonCG
               buttonText="Code for this component"
               buttonColor="outline-light"
+              onClick={() =>
+                (window.location.href =
+                  "https://github.com/ChristianGracia/christiangracia.com2.0/blob/master/src/components/github/github.component.tsx")
+              }
+            />
+          </div>
+          <div className="mt-5">
+            <ButtonCG
+              buttonColor="light"
+              buttonText={
+                githubData === undefined
+                  ? "Show repositories"
+                  : "Hide repositories"
+              }
+              onClick={() => hideRepos()}
             />
           </div>
         </div>
