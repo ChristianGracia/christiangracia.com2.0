@@ -86,32 +86,34 @@ export function Github(): JSX.Element {
                         flexDirection: "column"
                       }}
                     >
-                      <span
-                        className={styles.updatedText}
-                        // style={{ color: "#3892EB" }}
-                      >
-                        Last updated at:{" "}
+                      <span>
+                        <span
+                          className={styles.updatedText}
+                          // style={{ color: "#3892EB" }}
+                        >
+                          Last updated at:{" "}
+                        </span>
+                        <span
+                          style={{
+                            color: "black",
+                            fontWeight: "bold",
+                            fontSize: 10
+                          }}
+                        >
+                          {getUpdateTime(repo.updated_at)}
+                        </span>
                       </span>
-                      <span
-                        style={{
-                          color: "black",
-                          fontWeight: "bold",
-                          fontSize: 20
-                        }}
-                      >
-                        {getUpdateTime(repo.updated_at)}
-                      </span>
-
                       <div
-                        className="badge badge-danger"
                         style={{
                           textAlign: "center",
                           flexWrap: "wrap",
                           margin: 5
                         }}
                       >
-                        <span> Language: </span>
-                        <span>{repo.language}</span>
+                        <span style={{ color: "#3993EC" }}> Language: </span>
+                        <span className="badge badge-danger">
+                          {repo.language}
+                        </span>
                         {/*
                         <span className="badge badge-info ">
                           <i className="fas fa-star"></i> Stars:{" "}
