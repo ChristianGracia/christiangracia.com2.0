@@ -1,5 +1,4 @@
 import React from "react";
-import { Button } from "react-bootstrap";
 
 import styles from "./this-site.module.scss";
 import { SiteTitle } from "../common/site-title/site-title.component";

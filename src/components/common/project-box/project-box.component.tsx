@@ -1,6 +1,6 @@
 import React from "react";
-import { Button } from "react-bootstrap";
 import styles from "./project-box.module.scss";
+import { ButtonCG } from "../button-cg/button-cg.component";
 
 export const ProjectBox = (props: any): JSX.Element => {
   return (
@@ -13,12 +13,11 @@ export const ProjectBox = (props: any): JSX.Element => {
         </p>
         <p className={styles.description}>{props.description}</p>
         <div className={styles.buttonDiv}>
-          <Button
+          <ButtonCG
+            buttonText="See my code"
+            buttonColor="primary"
             onClick={() => (window.location.href = props.codeLink)}
-            variant="danger"
-          >
-            Link to code
-          </Button>
+          />
         </div>
       </div>
     </div>
