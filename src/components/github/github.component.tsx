@@ -156,11 +156,11 @@ export function Github(): JSX.Element {
               and render my repos on my site
             </span>
           </div>
-          <div className="m-5">
-            <Button variant="danger" onClick={() => hideRepos()}>
-              Code for this component
-            </Button>
-            <ButtonCG buttonText="hi" />
+          <div className="m-2">
+            <ButtonCG
+              buttonText="Code for this component"
+              buttonColor="outline-light"
+            />
           </div>
         </div>
       </div>

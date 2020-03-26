@@ -3,6 +3,7 @@ import { Button } from "react-bootstrap";
 
 import styles from "./this-site.module.scss";
 import { SiteTitle } from "../common/site-title/site-title.component";
+import { ButtonCG } from "../common/button-cg/button-cg.component";
 const cg = require("../../assets/christiangraciacode.PNG");
 
 export function ThisSite(): JSX.Element {
@@ -23,15 +24,14 @@ export function ThisSite(): JSX.Element {
           API.
         </span>
         <div className={styles.buttonDiv}>
-          <Button
-            variant="danger"
+          <ButtonCG
+            buttonText="See my code"
+            buttonColor="outline-light"
             onClick={() =>
               (window.location.href =
                 "https://github.com/ChristianGracia/christiangracia.com2.0")
             }
-          >
-            See my code
-          </Button>
+          />
         </div>
       </div>
     </div>

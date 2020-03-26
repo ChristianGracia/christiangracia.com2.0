@@ -4,7 +4,9 @@ import { Button } from "react-bootstrap";
 export function ButtonCG(props: any) {
   return (
     <div>
-      <Button>{props.buttonText}</Button>
+      <Button variant={props.buttonColor} onClick={props.onClick}>
+        {props.buttonText}
+      </Button>
     </div>
   );
 }
