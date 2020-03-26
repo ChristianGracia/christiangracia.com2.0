@@ -7,7 +7,7 @@ export const ProjectBox = (props: any): JSX.Element => {
     <div className={styles.container}>
       <div className={styles.box}>
         <p className={styles.title}>
-          <a className="linkStyle" href={props.siteLink}>
+          <a href={props.siteLink}>
             <span>{props.title}</span>
           </a>
         </p>
