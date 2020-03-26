@@ -6,6 +6,7 @@ import styles from "./github.module.scss";
 // import * as LazyLoad from "react-lazyload";
 // import { Spinner } from "../common/spinner/spinner.component";
 import { SiteTitle } from "../common/site-title/site-title.component";
+import { ButtonCG } from "../common/button-cg/button-cg.component";
 
 export function Github(): JSX.Element {
   const fetchDataAction = async () => {
@@ -159,6 +160,7 @@ export function Github(): JSX.Element {
             <Button variant="danger" onClick={() => hideRepos()}>
               Code for this component
             </Button>
+            <ButtonCG buttonText="hi" />
           </div>
         </div>
       </div>
