@@ -8,7 +8,7 @@ export function NBackground(): JSX.Element {
       params={{
         particles: {
           number: {
-            value: 90,
+            value: 20,
             density: {
               enable: true,
               value_area: 1500
@@ -23,7 +23,7 @@ export function NBackground(): JSX.Element {
             speed: 0.05
           },
           size: {
-            value: 3
+            value: 1
           },
           opacity: {
             anim: {
@@ -34,19 +34,14 @@ export function NBackground(): JSX.Element {
           }
         },
         interactivity: {
+          detect_on: "window",
           events: {
-            onclick: {
+            onhover: {
               enable: true,
-              mode: "push"
-            }
-          },
-          modes: {
-            push: {
-              particles_nb: 1
+              mode: "repulse"
             }
           }
-        },
-        retina_detect: true
+        }
       }}
     />
   );

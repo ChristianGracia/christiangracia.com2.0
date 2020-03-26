@@ -11,13 +11,13 @@ export function BBackground(): JSX.Element {
       params={{
         particles: {
           number: {
-            value: 160,
+            value: 120,
             density: {
               enable: false
             }
           },
           size: {
-            value: 10,
+            value: 5,
             random: true
           },
           move: {
@@ -29,15 +29,11 @@ export function BBackground(): JSX.Element {
           }
         },
         interactivity: {
+          detect_on: "window",
           events: {
-            onclick: {
+            onhover: {
               enable: true,
-              mode: "remove"
-            }
-          },
-          modes: {
-            remove: {
-              particles_nb: 10
+              mode: "repulse"
             }
           }
         }
