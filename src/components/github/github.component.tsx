@@ -171,15 +171,25 @@ export function Github(): JSX.Element {
               onClick={() => hideRepos()}
             />
           </div>
-          {githubData === undefined ? null : (
+          {githubData === undefined || githubData.length > 6 ? null : (
             <div className="mt-5">
               <ButtonCG
                 buttonColor="success"
                 buttonText="Show more"
-                onClick={() => fetchDataAction(10)}
+                onClick={() => fetchDataAction(12)}
               />
             </div>
           )}
+
+          {githubData !== undefined && githubData.length > 6 ? (
+            <div className="mt-5">
+              <ButtonCG
+                buttonColor="danger"
+                buttonText="Show less"
+                onClick={() => fetchDataAction(3)}
+              />
+            </div>
+          ) : null}
         </div>
       </div>
 
