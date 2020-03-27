@@ -7,6 +7,9 @@ import { Carousel } from "react-responsive-carousel";
 import { ProjectBox } from "../common/project-box/project-box.component";
 import { SiteTitle } from "../common/site-title/site-title.component";
 
+// import LazyLoad from "react-lazyload";
+// import { Spinner } from "../common/spinner/spinner.component";
+
 const onabeatPic = require("../../assets/onabeat.JPG");
 const onabeatPic2 = require("../../assets/onabeat2.PNG");
 const onabeatPic3 = require("../../assets/onabeat3.PNG");
@@ -31,7 +34,7 @@ export function BuiltSites(): JSX.Element {
             tweet={"1207152863434231808"}
             siteLink={"http://onabeat.com"}
           />{" "}
-          <Carousel autoPlay="true" infiniteLoop="true">
+          <Carousel autoPlay={true} infiniteLoop={true}>
             <div>
               <img src={onabeatPic} alt="Main page of onabeat.com" />
             </div>
@@ -57,7 +60,7 @@ export function BuiltSites(): JSX.Element {
             tweet={"1173662545464451075"}
             siteLink={"http://nflandscaping.com"}
           />
-          <Carousel autoPlay="true" infiniteLoop="true">
+          <Carousel autoPlay={true} infiniteLoop={true}>
             <div>
               <img
                 src={nflPic}

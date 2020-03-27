@@ -3,7 +3,6 @@ import React from "react";
 import styles from "./this-site.module.scss";
 import { SiteTitle } from "../common/site-title/site-title.component";
 import { ButtonCG } from "../common/button-cg/button-cg.component";
-const cg = require("../../assets/christiangraciacode.PNG");
 
 export function ThisSite(): JSX.Element {
   return (
