@@ -10,13 +10,6 @@ export function ThisSite(): JSX.Element {
     <div className={styles.pageContainer}>
       <SiteTitle title="christiangracia.com" />
       <div className={styles.container}>
-        <div>
-          <img
-            src={cg}
-            className={styles.siteImage}
-            alt="A view of this website's code written in TypeScript"
-          />
-        </div>
         <span className={styles.siteText}>
           This site is written in Typescript using only functional components
           and React Hooks. React/Redux + Sass front-end with a NodeJS back-end
