@@ -11,7 +11,7 @@ export function Github(): JSX.Element {
   const fetchDataAction = async () => {
     const clientId = require("../../config/keys").clientId;
     const clientSecret = require("../../config/keys").clientSecret;
-    const URL = `https://api.github.com/users/ChristianGracia/repos?per_page=10&sort=createdasc&client_id=${clientId}&client_secret=${clientSecret}`;
+    const URL = `https://api.github.com/users/ChristianGracia/repos?per_page=6&sort=createdasc&client_id=${clientId}&client_secret=${clientSecret}`;
 
     const data = await fetch(URL);
     const dataJSON = await data.json();
@@ -52,7 +52,7 @@ export function Github(): JSX.Element {
                   className="card card-body mb-2 bg-light ml-auto mr-auto"
                   style={{
                     margin: 0,
-                    maxWidth: 400,
+                    maxWidth: 500,
                     minWidth: 280,
                     padding: 20
                   }}
@@ -77,7 +77,9 @@ export function Github(): JSX.Element {
                           </p>
                         </Link>
                       </h4>
-                      <span style={{ fontSize: 20 }}>{repo.description}</span>
+                      <span style={{ fontSize: 20, padding: 10 }}>
+                        {repo.description}
+                      </span>
                     </div>
                     <div
                       style={{
@@ -137,7 +139,7 @@ export function Github(): JSX.Element {
   return (
     <div>
       <div style={{ position: "relative", textAlign: "center" }}>
-        <SiteTitle title="Latest Github Repos" />
+        <SiteTitle title="My Recent Github Repos" />
         <div
           style={{
             margin: 35
