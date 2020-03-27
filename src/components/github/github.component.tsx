@@ -8,10 +8,10 @@ import { SiteTitle } from "../common/site-title/site-title.component";
 import { ButtonCG } from "../common/button-cg/button-cg.component";
 
 export function Github(): JSX.Element {
-  const fetchDataAction = async () => {
+  const fetchDataAction = async (number: number = 6) => {
     const clientId = require("../../config/keys").clientId;
     const clientSecret = require("../../config/keys").clientSecret;
-    const URL = `https://api.github.com/users/ChristianGracia/repos?per_page=6&sort=createdasc&client_id=${clientId}&client_secret=${clientSecret}`;
+    const URL = `https://api.github.com/users/ChristianGracia/repos?per_page=${number}&sort=createdasc&client_id=${clientId}&client_secret=${clientSecret}`;
 
     const data = await fetch(URL);
     const dataJSON = await data.json();
@@ -171,6 +171,15 @@ export function Github(): JSX.Element {
               onClick={() => hideRepos()}
             />
           </div>
+          {githubData === undefined ? null : (
+            <div className="mt-5">
+              <ButtonCG
+                buttonColor="success"
+                buttonText="Show more"
+                onClick={() => fetchDataAction(10)}
+              />
+            </div>
+          )}
         </div>
       </div>
 
