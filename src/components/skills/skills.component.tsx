@@ -1,9 +1,6 @@
 import React from "react";
 import * as Fade from "react-reveal/Fade";
 import * as LightSpeed from "react-reveal/LightSpeed";
-// import Skills from "../skills/skills.component";
-// import Education from "../education/education.component";
-// import "./skills-and-edu.styles.css";
 import Slide from "react-reveal/Slide";
 import styles from "./skills.module.scss";
 
@@ -136,7 +133,6 @@ export function Skills() {
               </span>
             </div>{" "}
             <div style={{ paddingBottom: 30 }}></div>
-            <Fade right></Fade>
           </div>
         </div>
       </div>
