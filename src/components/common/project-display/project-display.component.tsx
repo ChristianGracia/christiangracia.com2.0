@@ -15,7 +15,9 @@ export function ProjectDisplay(): JSX.Element {
             "Webscraper written in Java that scrapes cryptocurrency data with Selenium, stores the data in a SQL db using MySql, and displays on the React front-end. The Java portion functions as an REST API endpoint that my front-end communicates with. Users can create accounts, request data scrapes, and view all data when logged in."
           }
           tweet={"1198478865901015041"}
-          siteLink={""}
+          siteLink={
+            "https://github.com/ChristianGracia/Java-Financial-Web-Scraper"
+          }
         />
       </div>
       <div className={styles.boxColor}>
@@ -28,7 +30,9 @@ export function ProjectDisplay(): JSX.Element {
             "Over 11,000+ lines of React Native code. Users can email the front desk, view detailed info and images about services offered, leave suggestions, and more!"
           }
           tweet={"1173662545464451075"}
-          siteLink={"http://adcofnorton.com"}
+          siteLink={
+            "https://github.com/ChristianGracia/Dental-iOSApp-React-Native"
+          }
         />
       </div>
     </div>
