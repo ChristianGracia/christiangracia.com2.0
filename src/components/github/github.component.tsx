@@ -2,8 +2,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import Fade from "react-reveal/Fade";
 import styles from "./github.module.scss";
-// import * as LazyLoad from "react-lazyload";
-// import { Spinner } from "../common/spinner/spinner.component";
+import { Spinner } from "../common/spinner/spinner.component";
 import { SiteTitle } from "../common/site-title/site-title.component";
 import { ButtonCG } from "../common/button-cg/button-cg.component";
 
@@ -193,7 +192,11 @@ export function Github(): JSX.Element {
         </div>
       </div>
       <React.Suspense
-        fallback={<div style={{ color: "white", padding: 40 }}>Loading...</div>}
+        fallback={
+          <div style={{ color: "white", padding: 40 }}>
+            <Spinner />
+          </div>
+        }
       >
         <div className={styles.repoContainer}>{repoItems}</div>
       </React.Suspense>
