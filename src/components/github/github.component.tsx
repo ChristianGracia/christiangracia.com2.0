@@ -192,8 +192,11 @@ export function Github(): JSX.Element {
           ) : null}
         </div>
       </div>
-
-      <div className={styles.repoContainer}>{repoItems}</div>
+      <React.Suspense
+        fallback={<div style={{ color: "white", padding: 40 }}>Loading...</div>}
+      >
+        <div className={styles.repoContainer}>{repoItems}</div>
+      </React.Suspense>
     </div>
   );
 }
