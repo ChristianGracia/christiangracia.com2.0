@@ -12,12 +12,15 @@ export function MainInfo(): JSX.Element {
         <div className="col-sm">
           <div className={styles.container}>
             <div className={styles.nameText}>
-              {" "}
-              <Wave
-                text="Christian Gracia"
-                effect="stretch"
-                effectChange={1.2}
-              />
+              <React.Suspense
+                fallback={<div style={{ color: "white" }}>Loading...</div>}
+              >
+                <Wave
+                  text="Christian Gracia"
+                  effect="stretch"
+                  effectChange={1.2}
+                />{" "}
+              </React.Suspense>
             </div>
           </div>
           <p className={styles.jobText}>
