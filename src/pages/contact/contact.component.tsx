@@ -11,7 +11,7 @@ export function ContactPage(): JSX.Element {
       </div>
       <div>
         <ContactForm />
-        <div style={{ paddingBottom: 800 }}></div>
+        <div style={{ paddingBottom: 400 }}></div>
       </div>
     </div>
   );

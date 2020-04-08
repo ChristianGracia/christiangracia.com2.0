@@ -8,40 +8,40 @@ export function NBackground(): JSX.Element {
       params={{
         particles: {
           number: {
-            value: 20,
+            value: 60,
             density: {
               enable: true,
-              value_area: 1500
-            }
+              value_area: 1500,
+            },
           },
           line_linked: {
             enable: true,
-            opacity: 0.02
+            opacity: 0.02,
           },
           move: {
             direction: "right",
-            speed: 0.05
+            speed: 0.05,
           },
           size: {
-            value: 1
+            value: 6,
           },
           opacity: {
             anim: {
               enable: true,
               speed: 1,
-              opacity_min: 0.05
-            }
-          }
+              opacity_min: 0.05,
+            },
+          },
         },
         interactivity: {
           detect_on: "window",
           events: {
             onhover: {
               enable: true,
-              mode: "repulse"
-            }
-          }
-        }
+              mode: "repulse",
+            },
+          },
+        },
       }}
     />
   );
