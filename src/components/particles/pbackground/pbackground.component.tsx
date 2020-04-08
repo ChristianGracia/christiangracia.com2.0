@@ -9,28 +9,28 @@ export function PBackground(): JSX.Element {
       params={{
         particles: {
           line_linked: {
-            color: "#39F077"
+            color: "#39F077",
           },
           number: {
-            value: 40
+            value: 20,
           },
           size: {
-            value: 3
-          }
+            value: 4,
+          },
         },
         interactivity: {
           detect_on: "window",
           events: {
             onhover: {
               enable: true,
-              mode: "repulse"
-            }
-          }
-        }
+              mode: "repulse",
+            },
+          },
+        },
       }}
       style={{
         width: "100%",
-        background: `#3993EC`
+        background: `#3993EC`,
       }}
     />
   );
