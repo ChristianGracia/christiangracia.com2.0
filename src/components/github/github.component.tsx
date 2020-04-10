@@ -42,12 +42,15 @@ export function Github(): JSX.Element {
 
   const languageChecker = (languageText: string): JSX.Element => {
     let color = "";
+    let symbol = "";
+
     switch (languageText) {
       case "Ruby":
         color = "red";
         break;
       case "Java":
-        color = "brown";
+        color = "#B07219";
+        symbol = "fab fa-java ml-2";
         break;
       case "JavaScript":
         color = "#F0D91D";
@@ -66,9 +69,13 @@ export function Github(): JSX.Element {
         color = "black";
         break;
     }
+    let symbolJSX = <i className={symbol}></i>;
     return (
       <div>
-        <span style={{ color: color }}>{languageText}</span>
+        <span style={{ color: color }}>
+          {languageText}
+          {symbolJSX}
+        </span>
       </div>
     );
   };
