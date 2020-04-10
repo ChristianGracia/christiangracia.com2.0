@@ -40,6 +40,39 @@ export function Github(): JSX.Element {
     }
   };
 
+  const languageChecker = (languageText: string): JSX.Element => {
+    let color = "";
+    switch (languageText) {
+      case "Ruby":
+        color = "red";
+        break;
+      case "Java":
+        color = "brown";
+        break;
+      case "JavaScript":
+        color = "#F0D91D";
+        break;
+      case "TypeScript":
+        color = "blue";
+        break;
+      case "C#":
+        color = "green";
+        break;
+      case "C":
+        color = "black";
+        break;
+
+      default:
+        color = "black";
+        break;
+    }
+    return (
+      <div>
+        <span style={{ color: color }}>{languageText}</span>
+      </div>
+    );
+  };
+
   const repoItems =
     githubData !== undefined
       ? githubData.map(
@@ -53,7 +86,7 @@ export function Github(): JSX.Element {
                     margin: 0,
                     maxWidth: 500,
                     minWidth: 280,
-                    padding: 20
+                    padding: 20,
                   }}
                 >
                   <div
@@ -61,7 +94,7 @@ export function Github(): JSX.Element {
                     style={{
                       display: "flex",
                       flexDirection: "column",
-                      justifyContent: "center"
+                      justifyContent: "center",
                     }}
                   >
                     <div className="" style={{ textAlign: "center" }}>
@@ -84,7 +117,7 @@ export function Github(): JSX.Element {
                       style={{
                         textAlign: "center",
                         display: "flex",
-                        flexDirection: "column"
+                        flexDirection: "column",
                       }}
                     >
                       <span>
@@ -95,7 +128,7 @@ export function Github(): JSX.Element {
                           style={{
                             color: "black",
                             fontWeight: "bold",
-                            fontSize: 10
+                            fontSize: 10,
                           }}
                         >
                           {getUpdateTime(repo.updated_at)}
@@ -105,12 +138,12 @@ export function Github(): JSX.Element {
                         style={{
                           textAlign: "center",
                           flexWrap: "wrap",
-                          margin: 5
+                          margin: 5,
                         }}
                       >
                         <span style={{ color: "#3993EC" }}> Language: </span>
-                        <span className="badge badge-danger">
-                          {repo.language}
+                        <span className="badge">
+                          {languageChecker(repo.language)}
                         </span>
                         {/*
                         <span className="badge badge-info ">
@@ -141,7 +174,7 @@ export function Github(): JSX.Element {
         <SiteTitle title="My Recent Github Repos" />
         <div
           style={{
-            margin: 35
+            margin: 35,
           }}
         >
           <span className={styles.codeText}>
