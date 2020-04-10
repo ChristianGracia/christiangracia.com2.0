@@ -47,6 +47,7 @@ export function Github(): JSX.Element {
     switch (languageText) {
       case "Ruby":
         color = "red";
+        symbol = "fas fa-gem ml-2";
         break;
       case "Java":
         color = "#B07219";
@@ -54,9 +55,10 @@ export function Github(): JSX.Element {
         break;
       case "JavaScript":
         color = "#F0D91D";
+        symbol = "fab fa-js-square ml-2";
         break;
       case "TypeScript":
-        color = "blue";
+        color = "#61D2F8";
         break;
       case "C#":
         color = "green";
