@@ -19,17 +19,18 @@ export function Skills() {
                 style={{
                   alignItems: "center",
 
-                  textAlign: "center"
+                  textAlign: "center",
                 }}
               >
                 <p className={styles.skillsText}>
                   <span style={{ color: "yellow" }}>Languages:</span>{" "}
-                  JavaScript, C#, Java, Python, C, PHP, HTML/CSS
+                  JavaScript, C#, Java, Python, C, TypeScript Ruby, PHP,
+                  HTML/CSS
                 </p>
                 <p
                   style={{
                     color: "white",
-                    fontWeight: "bold"
+                    fontWeight: "bold",
                   }}
                 >
                   <span className={styles.techItem}>Frameworks:</span> React
@@ -37,17 +38,17 @@ export function Skills() {
                 </p>
                 <p className={styles.skillsText}>
                   <span className={styles.techItem}>Libraries:</span> React,
-                  Redux, Bootstrap, Express.js, NodeJs
+                  Redux, Bootstrap, Express.js, NodeJs, jQuery
                 </p>
 
                 <p className={styles.skillsText}>
                   <span className={styles.techItem}>Database:</span> SQL, NoSQL,
-                  MongoDB, MySQL, SQL Server
+                  MongoDB, MySQL, SQL Server, PostgreSQL
                 </p>
 
                 <p className={styles.skillsText}>
                   <span className={styles.techItem}>API:</span> RESTful,
-                  GraphQL, AWS Amplify Serverless
+                  GraphQL, AWS Amplify Serverless, Ruby on Rails
                 </p>
               </div>
             </LightSpeed>
@@ -57,7 +58,7 @@ export function Skills() {
                 <p className={styles.skillHeader}>Technologies</p>
                 <span className={styles.skillsText}>
                   NET, .NET Core, ASP.NET MVC, Maven, Sprint Boot, Docker, Git,
-                  Eclipse, Visual Studio Code, Linux, Salesforce, Skuid
+                  Eclipse, Visual Studio Code, Linux, Salesforce, Skuid, Heroku
                 </span>
               </div>
 
@@ -66,7 +67,8 @@ export function Skills() {
                 <span className={styles.skillsText}>
                   {" "}
                   Unit testing, MERN stack, API design, OOP, TDD, SOLID, Design
-                  Patterns, UI/UX, Data Structures, Algorithms, Agile, Scrum
+                  Patterns, UI/UX, Data Structures, Algorithms, Agile, Scrum,
+                  Jira
                 </span>
               </div>
 
@@ -76,7 +78,7 @@ export function Skills() {
             <LightSpeed left>
               <div
                 style={{
-                  padding: 20
+                  padding: 20,
                 }}
               >
                 <div
@@ -86,7 +88,7 @@ export function Skills() {
                     flexDirection: "row",
                     margin: "auto",
                     padding: 2,
-                    justifyContent: "space-around"
+                    justifyContent: "space-around",
                   }}
                 >
                   <div className="col-xs">
@@ -123,7 +125,7 @@ export function Skills() {
                 textAlign: "center",
                 justifyContent: "center",
                 alignItems: "center",
-                paddingBottom: 20
+                paddingBottom: 20,
               }}
             >
               {" "}
