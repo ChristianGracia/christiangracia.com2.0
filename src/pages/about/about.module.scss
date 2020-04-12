@@ -7,6 +7,11 @@
 }
 .aboutContainer {
   position: relative;
-  background-color: "#3993EC";
+  background-color: #3993ec;
   //   height: 94vh;
+}
+@media only screen and (max-width: 600px) {
+  .particleBackground canvas {
+    display: none;
+  }
 }
