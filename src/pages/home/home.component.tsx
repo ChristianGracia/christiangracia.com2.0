@@ -27,3 +27,11 @@ export function HomePage(): JSX.Element {
 // <LazyLoad placeholder={<Spinner />}>
 //   <PBackground />
 // </LazyLoad>
+
+// const background = setTimeout(() => {
+//   return (
+//     <div className={styles.particleBackground}>
+//       <PBackground />
+//     </div>
+//   );
+// }, 100);
