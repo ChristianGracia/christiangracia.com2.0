@@ -4,6 +4,7 @@ import styles from "./main-info.module.scss";
 import * as Slide from "react-reveal/Slide";
 import { Wave } from "react-animated-text";
 import { SocialLinks } from "../social-links/social-links.component";
+import MainInfoTrail from "../common/main-info-trail/main-info-trail.component";
 
 export function MainInfo(): JSX.Element {
   return (
@@ -21,6 +22,7 @@ export function MainInfo(): JSX.Element {
                   effectChange={1.2}
                 />{" "}
               </React.Suspense>
+              <MainInfoTrail />
             </div>
           </div>
           <p className={styles.jobText}>
