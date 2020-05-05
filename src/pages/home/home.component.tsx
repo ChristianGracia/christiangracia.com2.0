@@ -7,7 +7,11 @@ import { SiteInfo } from "../../components/site-info/site-info.component";
 
 import { Spinner } from "../../components/common/spinner/spinner.component";
 
+declare let window: any;
 export function HomePage(): JSX.Element {
+  if (window.location.href.slice(0, -5) != "https") {
+    window.location.href = "https://www.christiangracia.com";
+  }
   return (
     <div className={styles.homeContainer}>
       <div className={styles.particleBackground}>
