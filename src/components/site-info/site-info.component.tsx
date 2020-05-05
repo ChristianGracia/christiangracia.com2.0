@@ -16,7 +16,7 @@ export function SiteInfo() {
           </a>
         </span>
         <span className={styles.siteInfoText}>
-          <span className={styles.techs}>Front-end:</span> React + Redux
+          <span className={styles.techs}>Front-end:</span> React
         </span>
         <span className={styles.siteInfoText}>
           <span className={styles.techs}>Back-end API:</span> NodeJs
