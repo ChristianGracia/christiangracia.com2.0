@@ -12,7 +12,6 @@ export function Skills() {
         <div className="">
           <div className="col-sm">
             <div style={{ paddingBottom: 5 }}></div>
-            <Fade top></Fade>
 
             <LightSpeed top cascade>
               <div
@@ -24,7 +23,7 @@ export function Skills() {
               >
                 <p className={styles.skillsText}>
                   <span style={{ color: "yellow" }}>Languages:</span>{" "}
-                  JavaScript, C#, Java, Python, C, TypeScript Ruby, PHP,
+                  JavaScript, C#, Java, Python, C, TypeScript, Ruby, PHP,
                   HTML/CSS
                 </p>
                 <p
@@ -33,12 +32,12 @@ export function Skills() {
                     fontWeight: "bold",
                   }}
                 >
-                  <span className={styles.techItem}>Frameworks:</span> React
-                  Native, VueJS, Angular, Django, Flask
+                  <span className={styles.techItem}>Frameworks:</span> Angular,
+                  React Native, Express.js, Bootstrap, VueJS, Django, Flask
                 </p>
                 <p className={styles.skillsText}>
                   <span className={styles.techItem}>Libraries:</span> React,
-                  Redux, Bootstrap, Express.js, NodeJs, jQuery
+                  Redux, jQuery
                 </p>
 
                 <p className={styles.skillsText}>
@@ -47,8 +46,8 @@ export function Skills() {
                 </p>
 
                 <p className={styles.skillsText}>
-                  <span className={styles.techItem}>API:</span> RESTful,
-                  GraphQL, AWS Amplify Serverless, Ruby on Rails
+                  <span className={styles.techItem}>API:</span> REST, NodeJs,
+                  GraphQL, AWS Amplify Serverless, Ruby on Rails, Spring Boot
                 </p>
               </div>
             </LightSpeed>
@@ -57,8 +56,8 @@ export function Skills() {
               <div className={styles.container}>
                 <p className={styles.skillHeader}>Technologies</p>
                 <span className={styles.skillsText}>
-                  NET, .NET Core, ASP.NET MVC, Maven, Sprint Boot, Docker, Git,
-                  Eclipse, Visual Studio Code, Linux, Salesforce, Skuid, Heroku
+                  NET, .NET Core, ASP.NET MVC, Maven, Docker, Git, Eclipse,
+                  Visual Studio Code, Linux, Salesforce, Skuid, Heroku
                 </span>
               </div>
 
