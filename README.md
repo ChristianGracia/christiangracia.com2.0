@@ -18,7 +18,7 @@ This app requires github API credentials to retrieve and display your repo info
 
 ---
 
-make a directory in the src folder called config
+make a folder inside of src called config
 
 then created a file called keys.js and have it export your github client Id and secret
 
