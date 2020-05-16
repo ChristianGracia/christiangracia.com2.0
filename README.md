@@ -4,7 +4,7 @@ This repo contains the code for my personal website rewritten in typescript
 
 **100% TypeScript React Site with React Hooks and only functional components (no class based)**
 
-code live at https://christiangracia.com
+code live at https://www.christiangracia.com
 
 old website code: https://github.com/ChristianGracia/christiangracia.com (JavaScript)
 
