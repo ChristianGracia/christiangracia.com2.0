@@ -1,5 +1,16 @@
 # christiangracia2.0
 
+
+
+
+# 7/6/2020 | New website
+
+# My new website's code can be found at : https://github.com/ChristianGracia/christiangracia3.0
+
+
+
+
+
 This repo contains the code for my personal website rewritten in typescript
 
 **100% TypeScript React Site with React Hooks and only functional components (no class based)**
