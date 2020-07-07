@@ -1,15 +1,16 @@
-.construction-container {
-  .siteInfoContainer {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    margin-top: 5vh;
+.constructionContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding-top: 10px;
 
-    .siteInfoText {
-      font-size: 15px;
-      color: white;
-      font-weight: bold;
-    }
+  max-width: 500px;
+  margin: 0 auto;
+
+  .siteInfoText {
+    font-size: 15px;
+    color: black;
+    font-weight: bold;
   }
 }
