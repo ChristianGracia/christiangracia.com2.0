@@ -1,0 +1,15 @@
+.construction-container {
+  .siteInfoContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin-top: 5vh;
+
+    .siteInfoText {
+      font-size: 15px;
+      color: white;
+      font-weight: bold;
+    }
+  }
+}

@@ -6,6 +6,7 @@ import { ExploreButton } from "../../components/explore-button/explore-button.co
 import { SiteInfo } from "../../components/site-info/site-info.component";
 
 import { Spinner } from "../../components/common/spinner/spinner.component";
+import { ConstructionBanner } from "../../components/construction-banner/construction-banner.component";
 
 export function HomePage(): JSX.Element {
   return (
@@ -17,6 +18,7 @@ export function HomePage(): JSX.Element {
       </div>
       <div className={styles.contentContainer}>
         <MainInfo />
+        <ConstructionBanner />
 
         <ExploreButton />
         <SiteInfo />

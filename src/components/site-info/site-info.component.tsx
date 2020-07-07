@@ -15,13 +15,6 @@ export function SiteInfo() {
             Code Link
           </a>
         </span>
-        <span className={styles.siteInfoText}>
-          <span className={styles.techs}>Front-end:</span> React
-        </span>
-        <span className={styles.siteInfoText}>
-          <span className={styles.techs}>Back-end API:</span> NodeJs
-        </span>
-        <span className={styles.codeLink}></span>
       </div>
     </Fade>
   );

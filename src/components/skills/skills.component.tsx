@@ -16,7 +16,7 @@ export function Skills() {
             <LightSpeed top cascade>
               <div
                 style={{
-                  alignItems: "center",
+                  alignItems: "left",
 
                   textAlign: "center",
                 }}
