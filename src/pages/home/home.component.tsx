@@ -18,7 +18,7 @@ export function HomePage(): JSX.Element {
       </div>
       <div className={styles.contentContainer}>
         <MainInfo />
-        <ConstructionBanner />
+    
 
         <ExploreButton />
         <SiteInfo />
